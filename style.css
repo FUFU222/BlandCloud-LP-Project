@@ -2142,6 +2142,7 @@ color: #D91E68;
       font-weight: 400;
       line-height: normal;
       letter-spacing: 1.6px;
+      text-decoration: none;
   }
   .footer__container__content__policy__separate {
     width: 1px;
@@ -2157,6 +2158,7 @@ color: #D91E68;
       font-weight: 400;
       line-height: normal;
       letter-spacing: 1.2px;
+      text-decoration: none;
   }
 
 
