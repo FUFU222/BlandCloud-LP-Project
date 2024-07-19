@@ -8,8 +8,18 @@ body {
 html {
   background-color: rgb(200, 200, 200);
 }
-li {
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+ul, li {
+padding: 0;
+margin: 0;
   list-style: none;
+}
+button {
+  border:none;
 }
 *,
 *::before,
