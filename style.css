@@ -58,6 +58,42 @@
   font-weight: normal;
   font-style: normal;
 }
+/* -------------button-animation------------ */
+.CTA-button {
+  overflow: hidden;
+}
+.CTA-button::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fbfbfb;
+  animation: btn_animation 3s ease-in-out infinite;
+}
+@-webkit-keyframes btn_animation {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
 
 /*--------------- top ----------------- */
 .top {
@@ -350,6 +386,7 @@ color: #304266;
   background-color: #ffffff;
   margin: 40px 0 120px 0;
 }
+
 
 /* ------------issue---------- */
 .issue {
