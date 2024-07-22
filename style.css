@@ -388,7 +388,7 @@ color: #304266;
 .issue {
   position: relative;
   display: flex;
-  width: 1366px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 64px;
@@ -398,7 +398,7 @@ color: #304266;
 .issue__container {
   width: 1100px;
   height: auto;
-  margin: 0 133px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -569,7 +569,7 @@ color: #304266;
 }
 .problemSolving__bg-lower {
   width: 1366px;
-  height: 1507px;
+  height: 907px;
   position: absolute;
   top: 340px;
   flex-shrink: 0;
@@ -675,6 +675,7 @@ color: #304266;
 
 /* ------------serviceIntroduction-------------- */
 .serviceIntroduction {
+  width: 1366px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1369,7 +1370,7 @@ color: #304266;
 }
 .flow__bg-lower {
   width: 1366px;
-  height: 1498px;
+  height: 1408px;
   position: absolute;
   top: 340px;
   flex-shrink: 0;
@@ -1425,7 +1426,7 @@ color: #304266;
 .flow__container__steps {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
   align-self: stretch;
 }
@@ -1467,10 +1468,12 @@ color: #304266;
   position: absolute;
   top: 86px;
   left: 67px;
-  width: 200px;
-  height: 120px;
   flex-shrink: 0;
   background-color: #304266;
+}
+.flow__container__steps__step__image img {
+  width: 200px;
+  height: 120px;
 }
 .flow__container__steps__step__description {
   position: absolute;
