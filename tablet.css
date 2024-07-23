@@ -9,17 +9,20 @@
     display: none;
   }
 
-
-
   .top {
+    width: 768px;
     height: 1024px;
     padding: 0 23px 124px 23px;
-    background-image: url("");
+    background-image: none;
   }
   .top__container {
       width: 768px;
       height: 900px;
       text-align:center;
+      background-image: url("./images/sec1/fv_background_sp.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
   }
   .top__container__logo {
     top: 53px;
@@ -270,7 +273,43 @@
       font-size: 18px;
     }
     .serviceDetail__effect__cards {
-      flex-direction: row;
+      flex-direction: column;
+    }
+    .serviceDetail__effect__cards__card {
+      position: relative;
+      justify-content: left;
+      width: 656px;
+    }
+    .serviceDetail__effect__cards__card__container {
+      gap: 16px;
+    }
+    .serviceDetail__effect__cards__card__container__image {
+      position: absolute;
+      top: 24px;
+      left: 319px;
+    }
+    .serviceDetail__effect__cards__card__container__image img {
+      width: 362px;
+      height: 304px;
+    }
+    .serviceDetail__effect__cards__card__container__description {
+      width: 300px;
+    }
+    .serviceDetail__effect__cards__card__container__title h3 {
+      font-size: 24px;
+      letter-spacing: 1.2px;
+    }
+    .serviceDetail__effect__cards__card__container__japaneseTitle h3 {
+      font-size: 18px;
+      letter-spacing: 0.9px;
+    }
+    .serviceDetail__effect__cards__card__container__subtitle h4 {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    .serviceDetail__effect__cards__card__container__description p {
+      font-size: 16px;
+
     }
 
     .serviceDetail__reasons__title h3 {
@@ -284,6 +323,7 @@
     .serviceDetail__reasons__cards__card {
       width: 230px;
       height: 230px;
+
     }
     .serviceDetail__reasons__cards__card__title h4 {
       font-size: 20px
@@ -380,6 +420,9 @@
     .flow {
       width: 768px;
       height: 1580px;
+    }
+    .flow__bg-lower {
+      height: 1240px;
     }
     .flow__container__title-box {
       gap: 16px;
@@ -496,8 +539,8 @@
       gap: 24px;
       width: 704px;
     }
-    .faq__list__item {
-      
+    .faq__list__item__answer__text h4 {
+     font-size: 16px; 
     }
     .faq__list__item__question {
       width: 624px;
@@ -589,7 +632,9 @@
       width: 704px;
       height: 500px;
     }
-    
+    .contact__bg-lower {
+      height: 800px;
+    }
 
 
 
