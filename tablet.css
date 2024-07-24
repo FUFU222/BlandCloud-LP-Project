@@ -1,12 +1,12 @@
 @media (min-width: 768px) and (max-width: 1524px) {
-  .tab {
-    display: block;
-  }
   .pc {
     display: none;
   } 
   .sp {
     display: none;
+  }
+  .tab {
+    display: block;
   }
 
   .top {
@@ -194,6 +194,10 @@
     .serviceIntroduction__head-line__image img {
       height: 275px;
       width: 270px;
+    }
+    .serviceIntroduction__head-line__bg {
+     top: 17px;
+     right: -45px;
     }
     .serviceIntroduction__items__item__title h3 {
       font-size: 24px;
@@ -412,10 +416,10 @@
     .serviceDetail__example__case__overview__logo img {
       width: 280px;
     }
-    .serviceDetail__example__case:nth-of-type(3)
+    /* .serviceDetail__example__case:nth-of-type(3)
      .serviceDetail__example__case__result__review__image img{
       width: 200px;
-    }
+    } */
 /* ---------------flow--------------- */
     .flow {
       width: 768px;
@@ -427,12 +431,12 @@
     .flow__container__title-box {
       gap: 16px;
     }
-    .flow__container__title-box__title h2 {
-      font-size: 24px;
-      letter-spacing: 2.4px;
+    .flow__container__title-box__title h2  {
+      font-size: 2px;
+      letter-spacing: 0px;
     }
     .flow__container__title-box__title h2 span{
-      font-size: 36px;
+      font-size: 28px;
       letter-spacing: 3.6px;
     }
     .flow__container__title-box__description p {

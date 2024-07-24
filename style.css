@@ -1,3 +1,15 @@
+.sp {
+  display: none;
+}
+
+.tab {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
 @font-face {
   font-family: "Volkhov";
   src: url("./assets/font/Volkhov/Volkhov-Regular.ttf") format("truetype");
@@ -739,12 +751,9 @@ color: #304266;
   position: absolute;
   top: 28px;
   right: -114px;
-  width: 637px;
-  height: 494px;
   z-index: 0;
 }
 .serviceIntroduction__head-line__bg svg {
-  flex-shrink: 0;
   fill: rgba(215, 235, 247, 0.1);
 }
 
@@ -1070,12 +1079,13 @@ color: #304266;
 }
 
 .serviceDetail__reasons {
-  margin-top: 130px;
+  margin-top: 100px;
   height: auto;
   width: 1100px;
   gap: 46px;
   display: flex;
   text-align: center;
+  align-items: center;
   flex-direction: column;
 }
 .serviceDetail__reasons__title h3 {
@@ -1182,7 +1192,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 41px; /* 146.429% */
   letter-spacing: 1.4px;
 }
@@ -1248,11 +1258,6 @@ color: #304266;
 .serviceDetail__example__case__result__review__image img{
   width: 200px;
   height: 150px;
-}
-.serviceDetail__example__case:nth-of-type(3)
-.serviceDetail__example__case__result__review__image img{
-  width: 250px;
-  height: auto;
 }
 .serviceDetail__example__case__result__review__user {
   display: flex;
@@ -1323,7 +1328,6 @@ color: #304266;
 
 .serviceDetail__example__case__overview__half-paragraph {
   width: 621px;
-  height: 160px;
 }
 .serviceDetail__example__case:nth-of-type(3) 
 .serviceDetail__example__case__overview {
@@ -1474,7 +1478,6 @@ color: #304266;
   top: 86px;
   left: 67px;
   flex-shrink: 0;
-  background-color: #304266;
 }
 .flow__container__steps__step__image img {
   width: 200px;
@@ -1506,7 +1509,7 @@ color: #304266;
 }
 .plan__container {
   display: flex;
-  width: 1100px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -1859,7 +1862,6 @@ display: flex;
 .faq__list__item__question__box__text h4{
   display: flex;
     width: 734px;
-    height: 32px;
     flex-direction: column;
     justify-content: center;
     color: #304266;
