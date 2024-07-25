@@ -290,7 +290,8 @@
     .serviceDetail__effect__cards__card {
       position: relative;
       justify-content: left;
-      width: 656px;
+      width: 704px;
+      height: 344px;
     }
     .serviceDetail__effect__cards__card__container {
       gap: 16px;
@@ -310,6 +311,7 @@
     .serviceDetail__effect__cards__card__container__title h3 {
       font-size: 24px;
       letter-spacing: 1.2px;
+      margin-bottom: 0px;
     }
     .serviceDetail__effect__cards__card__container__japaneseTitle h3 {
       font-size: 18px;
@@ -487,6 +489,9 @@
         height: 111.034px;
     }
     /* ------------------------plan---------------- */
+    .plan__container {
+      padding: 0 28px;
+    }
     .plan__container__title h2 {
       font-size: 24px;
       letter-spacing: 1.2px;
@@ -507,10 +512,13 @@
     .plan__container__cards__card___box svg {
       width: 450px;
     }
-/* ----------SVGの幅切り替え方法検討 */
     .plan__container__annotation {
       font-size: 14px;
       line-height: 26px;
+      padding: 0 45.5px;
+    }
+    .plan__container__annotation p{
+      padding: 0 80px;
     }
 
     /*-------------secondCTAbanner---------------  */

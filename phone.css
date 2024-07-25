@@ -162,7 +162,7 @@
     }
   
     .issue__impact__container {
-      width: 350px;
+      width: 376px;
     }
   
     .issue__impact__container__title h2 {
@@ -194,15 +194,15 @@
     /* -----------------problem-solving-------------- */
     .problemSolving {
       height: 2900px;
-      width: 350px;
+      width: 376px;
     }
   
     .problemSolving__bg-upper {
-      clip-path: inset(0 582px 0 582px);
+      clip-path: inset(0 778px 0 778px);
     }
   
     .problemSolving__bg-lower {
-      width: 768px;
+      width: 376px;
       height: 2500px;
     }
   
@@ -211,7 +211,7 @@
     }
   
     .problemSolving__container__cards {
-      width: 350px;
+      width: 376px;
       justify-content: center;
       gap: 16px;
     }
@@ -365,10 +365,11 @@
     .serviceDetail__effect__cards__card {
       gap: 10px;
       padding: 16px;
+      height: 458px;
     }
   
     .serviceDetail__effect__cards__card__container {
-      gap: 16px;
+      gap: 12px;
     }
     .serviceDetail__effect__cards__card__container__description {
       width: 300px;
@@ -376,6 +377,7 @@
   
     .serviceDetail__effect__cards__card__container__title h3 {
       font-size: 18px;
+      margin-bottom: -4px;
       letter-spacing: 0.9px;
     }
   
@@ -551,12 +553,16 @@
   
     /* ---------------flow--------------- */
     .flow {
-      width: 100%;
       height: 2300px;
     }
   
+    .flow__bg-upper {
+      height: 1900px;
+      clip-path: inset(0 778px 0 778px);
+    }
     .flow__bg-lower {
       height: 1900px;
+      width: 377px;
     }
   
     .flow__container__title-box {
@@ -874,11 +880,15 @@
       height: 500px;
     }
   
+    .contact__bg-upper {
+      clip-path: inset(0 778px 0 778px);
+    }
     .contact__bg-lower {
       height: 800px;
+      width: 376px;
     }
     .footer {
-      width: 100%px;
+      width: 376pxpx;
     }
     .footer__container {
       width: 319px;

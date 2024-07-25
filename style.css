@@ -312,7 +312,7 @@ color: #304266;
 
 
 .company-overview__container__stats__cards__card__text__lower__num h4 {
-    font-family: Volkhov;
+    font-family: "Volkhov";
 }
 .company-overview__container__stats__cards__card__text__lower__unit h4 {
   display: flex;
@@ -421,7 +421,7 @@ color: #304266;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #304266;
   color: transparent;
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-size: 90px;
   font-style: normal;
   font-weight: 400;
@@ -943,7 +943,7 @@ color: #304266;
 .serviceDetail__effect__title h2 span {
   color: #d91e68;
   text-align: center;
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -968,11 +968,11 @@ color: #304266;
   align-self: stretch;
 }
 .serviceDetail__effect__cards__card {
+  height: 656px;
   display: flex;
   padding: 32px 24px;
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
   border-radius: 12px;
   background: #eaedf2;
 }
@@ -991,6 +991,7 @@ color: #304266;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.6px;
+  margin-bottom: -20px;
 }
 .serviceDetail__effect__cards__card__container__japaneseTitle h3 {
   color: #304266;
@@ -1059,7 +1060,7 @@ color: #304266;
 .serviceDetail__reasons__title h3 span {
   color: #d91e68;
   text-align: center;
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -1141,7 +1142,7 @@ color: #304266;
 }
 .serviceDetail__example__case__title__counter h3 {
   color: #5079b2;
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -1217,7 +1218,6 @@ color: #304266;
 }
 .serviceDetail__example__case__result__review__image img{
   width: 200px;
-  height: 150px;
 }
 .serviceDetail__example__case__result__review__user {
   display: flex;
@@ -1412,7 +1412,7 @@ color: #304266;
   top: 15px;
   left: 40px;
   color: #5079b2;
-  font-family: Volkhov;
+  font-family: "Volkhov";
   font-size: 56px;
   font-style: normal;
   z-index: 2;
@@ -1929,7 +1929,7 @@ color: #304266;
 .free-service__container__annotation h3 span:nth-of-type(1) {
   color: #D91E68;
     text-align: center;
-    font-family: Volkhov;
+    font-family: "Volkhov";
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
@@ -2181,7 +2181,10 @@ color: #D91E68;
               background-color: #fff;
               max-width: 1000px;
               margin: 0 auto;
-              border: 1px solid #ccc;
+            }
+            .policy th {
+              width: 180px;
+              text-align: left;
             }
             .policy h1 {
               text-align: center;
