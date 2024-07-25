@@ -435,8 +435,12 @@
       width: 768px;
       height: 1580px;
     }
+    .flow__bg-upper {
+      clip-path: inset(0 582px 0 582px);
+    }
     .flow__bg-lower {
       height: 1240px;
+      width: 768px;
     }
     .flow__container__title-box {
       gap: 16px;
@@ -652,10 +656,18 @@
       width: 704px;
       height: 500px;
     }
+    .contact__bg-upper {
+      width: 1932px;
+      clip-path: inset(0 582px 0 582px);
+    }
     .contact__bg-lower {
       height: 800px;
+      width: 768px;
     }
-
+/* ------------footer------------- */
+.footer {
+  width: 768px;
+}
 
 
 

@@ -23,7 +23,12 @@
       background-size: cover;
     }
     .top__container__logo {
-      display: none;
+      top: 79px;
+      left: 30px;
+    } 
+    .top__container__logo img{
+      width: 300px;
+      height: 65px;
     } 
     .top__container__title {
       top: 171px;
