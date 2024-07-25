@@ -641,6 +641,7 @@
     }
     /* ------------------------plan---------------- */
     .plan__container {
+      width: 367px;
       gap: 24px;
     }
     .plan__container__title h2 {
@@ -672,7 +673,6 @@
     .plan__container__cards__card__box__text-area__title__price p span {
       font-size: 40px;
     }
-    /* ----------SVGの幅切り替え方法検討 */
     .plan__container__annotation {
       font-size: 14px;
       line-height: 24px;

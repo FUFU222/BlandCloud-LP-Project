@@ -494,6 +494,7 @@
     }
     /* ------------------------plan---------------- */
     .plan__container {
+      width: 768px;
       padding: 0 28px;
     }
     .plan__container__title h2 {
@@ -518,11 +519,7 @@
     }
     .plan__container__annotation {
       font-size: 14px;
-      line-height: 26px;
-      padding: 0 45.5px;
-    }
-    .plan__container__annotation p{
-      padding: 0 80px;
+      line-height: 28px;
     }
 
     /*-------------secondCTAbanner---------------  */
