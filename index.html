@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./tablet.css">
     <link rel="stylesheet" href="./phone.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/cloud fav/260x260px.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/cloud fav/512x512px.svg">
   </head>
   <body>
     <!-- クラス名、id名、要素の使い方等微妙なものがありましたらご指摘いただきたいです -->
@@ -31,12 +33,14 @@
             </div>
 
             <button class="top__container__cta-button CTA-button">
-              <div class="top__container__cta-button__upper">
-                <h2>\ 無料リスク診断付き /</h2>
-              </div>
-              <div class="top__container__cta-button__lower">
-                <h2>今すぐ相談してみる</h2>
-              </div>
+              <a href="#contact">
+                <div class="top__container__cta-button__upper">
+                  <h2>\ 無料リスク診断付き /</h2>
+                </div>
+                <div class="top__container__cta-button__lower">
+                  <h2>今すぐ相談してみる</h2>
+                </div>
+              </a>
             </button>
 
             <div class="top__container__actor">
@@ -716,12 +720,14 @@
             </h2>
           </div>
           <button class="firstCTABanner__CTA-button CTA-button">
-            <div class="firstCTABanner__CTA-button__caption">
-              <p>\ 無料リスク診断付き /</p>
-            </div>
-            <div class="firstCTABanner__CTA-button__action-word">
-              <h3>今すぐ相談する</h3>
-            </div>
+            <a href="#contact">
+              <div class="firstCTABanner__CTA-button__caption">
+                <p>\ 無料リスク診断付き /</p>
+              </div>
+              <div class="firstCTABanner__CTA-button__action-word">
+                <h3>今すぐ相談する</h3>
+              </div>
+            </a>
           </button>
           <div class="firstCTABanner__bubble">
             <img class="pc tab" src="./images/sec7/sec7_bubble_pc.png" alt="">
@@ -1517,19 +1523,22 @@
           </div>
           <div class="secondCTABanner__bubble">
             <img class="pc" src="./images/sec13/sec13_bubble_pc.png" alt="">
-            <img class="tab sp" src="./images/sec13/sec13_bubble_tb.png" alt="">
+            <img class="tab" src="./images/sec13/sec13_bubble_tb.png" alt="">
+            <img class="sp" src="./images/sec13/sec13_bubble_sp.png" alt="">
           </div>
           <!-- <div class="secondCTABanner__speech">
              <h4>今なら相談料<br />
             着手金０円！</h4> 
           </div> -->
           <button class="secondCTABanner__CTA-button CTA-button">
-            <div class="secondCTABanner__CTA-button__caption">
-              <p>\ 無料リスク診断付き /</p>
-            </div>
-            <div class="secondCTABanner__CTA-button__action-word">
-              <h3>今すぐ相談する</h3>
-            </div>
+            <a href="#contact">
+              <div class="secondCTABanner__CTA-button__caption">
+                <p>\ 無料リスク診断付き /</p>
+              </div>
+              <div class="secondCTABanner__CTA-button__action-word">
+                <h3>今すぐ相談する</h3>
+              </div>
+            </a>
           </button>
         </div>
       </section>
@@ -1918,7 +1927,7 @@
                   </div>
                   <div class="free-service__container__head__text-area__description">
                       <p>会社名やサービス名を検索エンジンやSNSで検索した際に<br />
-                      どのような箇所にリスクがあるのかを調査し<br />
+                      どのような箇所にリスクがあるのかを調査し、<br class="pc tab" />
                       レポートを作成してお渡しいたします</p>
                       <p>事前にリスクを把握することで最悪の事態を防ぐことができます</p>
                   </div>
@@ -1929,8 +1938,8 @@
               </div>
             </div>
             <div class="free-service__container__annotation">
-              <h3><span>400</span>社以上の豊富な実績を誇るブランドクラウド独自の<br />
-              レポートを<span>無料</span>でご提供いたします</h3>
+              <h3><span>400</span>社以上の豊富な実績を誇る<br class="sp" />ブランドクラウド独自の<br class="pc tab" />
+              レポートを<br class="sp" /><span>無料</span>でご提供いたします</h3>
             </div>
             <ul class="free-service__container__cards">
                 <li class="free-service__container__cards__card">
@@ -1967,11 +1976,13 @@
                 </li>
             </ul>
             <div class="free-service__container__CTA">
-              <div class="free-service__container__CTA__upper-text">
-                <h3>＼ お問い合わせは<span>1</span>分で完了！ ／</h3>
-              </div>
-              <button class="free-service__container__CTA__button">
-                <h3>今すぐ無料レポートを作成する！</h3>
+              <a href="#contact">
+                <div class="free-service__container__CTA__upper-text">
+                  <h3>＼ お問い合わせは<span>1</span>分で完了！ ／</h3>
+                </div>
+                <button class="free-service__container__CTA__button">
+                  <h3>今すぐ無料レポートを作成する！</h3>
+              </a>
               </button>
             </div>
           </div>
@@ -2001,32 +2012,52 @@
                   <input type="hidden" name="debug" value=1>
                   <input type="hidden" name="debugEmail" value="marina.kurosu@brandcloud.co.jp">
                   <!-- 注意 -->
-                
-                  <label for="company">法人名</label><input id="company" maxlength="40" name="company" size="20" type="text" /><br>
-                
-                  <label for="url">公式HP URL</label><input id="url" maxlength="80" name="url" size="20" type="text" /><br>
-                
-                  <label for="last_name">お名前</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-                
-                  部署名：<select id="00NQ9000001uKbN" name="00NQ9000001uKbN" title="選択してください">
-                    <option value="選択してください"></option>
-                    <option value="役員(代表含む)">役員(代表含む)</option>
-                    <option value="マーケティング">マーケティング</option>
-                    <option value="広報">広報</option>
-                    <option value="人事・総務">人事・総務</option>
-                    <option value="経営企画">経営企画</option>
-                    <option value="事務・管理">事務・管理</option>
-                    <option value="情報システム・DX">情報システム・DX</option>
-                    <option value="営業・営業企画">営業・営業企画</option>
-                    <option value="事業開発">事業開発</option>
-                    <option value="危機管理">危機管理</option>
-                    <option value="CS・品質管理">CS・品質管理</option>
-                    <option value="ブランディング">ブランディング</option>
-                    <option value="その他（特記事項に明記）">その他（特記事項に明記）</option>
-                    <option value="部署無し">部署無し</option>
-                  </select><br>
-                
-                  役職：<select id="00NQ9000003Yeqv" name="00NQ9000003Yeqv" title="選択してください">
+                  <div class="column">
+                    <div class="essential"><p class="inner-text">必須</p></div>
+                    <label for="company">法人名</label><input id="company" maxlength="40" name="company" size="20" type="text" /><br>
+                  </div>
+                  <div class="column">
+                    <div class="any">
+                      <p class="inner-text">任意</p>
+                    </div>
+                    <label for="url">公式HP URL</label><input id="url" maxlength="80" name="url" size="20" type="text" />
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential">
+                      <p class="inner-text">必須</p>
+                    </div>
+                    <label for="last_name">お名前</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential">
+                      <p class="inner-text">必須</p>
+                    </div>
+                    <p class="select">部署名</p><select id="00NQ9000001uKbN" name="00NQ9000001uKbN" title="選択してください">
+                      <option value="選択してください"></option>
+                      <option value="役員(代表含む)">役員(代表含む)</option>
+                      <option value="マーケティング">マーケティング</option>
+                      <option value="広報">広報</option>
+                      <option value="人事・総務">人事・総務</option>
+                      <option value="経営企画">経営企画</option>
+                      <option value="事務・管理">事務・管理</option>
+                      <option value="情報システム・DX">情報システム・DX</option>
+                      <option value="営業・営業企画">営業・営業企画</option>
+                      <option value="事業開発">事業開発</option>
+                      <option value="危機管理">危機管理</option>
+                      <option value="CS・品質管理">CS・品質管理</option>
+                      <option value="ブランディング">ブランディング</option>
+                      <option value="その他（特記事項に明記）">その他（特記事項に明記）</option>
+                      <option value="部署無し">部署無し</option>
+                    </select>
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential">
+                      <p class="inner-text">必須</p>
+                    </div>
+                    <p class="select">役職</p><select id="00NQ9000003Yeqv" name="00NQ9000003Yeqv" title="選択してください">
                     <option value="選択してください"></option>
                     <option value="役員/経営者">役員/経営者</option>
                     <option value="部長">部長</option>
@@ -2034,39 +2065,77 @@
                     <option value="主任">主任</option>
                     <option value="一般社員">一般社員</option>
                     <option value="その他/インターン">その他/インターン</option>
-                  </select><br>
+                  </select>
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential">
+                      <p class="inner-text">必須</p>
+                    </div>
+                    <label for="phone">電話番号</label><input id="phone" maxlength="40" name="phone" size="20" type="text" />
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential">
+                      <p class="inner-text">必須</p>
+                    </div>
+                    <label for="email">メールドレス</label><input id="email" maxlength="80" name="email" size="20" type="text" />
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential">
+                      <p class="inner-text">必須</p>
+                    </div>
+                    <p class="select">当サービスを知ったきっかけ</p><select id="00NQ9000003Yf0b" name="00NQ9000003Yf0b" title="選択してください">
+                      <option value="選択してください"></option>
+                      <option value="DM">DM</option>
+                      <option value="展示会">展示会</option>
+                      <option value="プレスリリース">プレスリリース</option>
+                      <option value="Google広告">Google広告</option>
+                      <option value="ビジョン広告">ビジョン広告</option>
+                      <option value="Youtube広告">Youtube広告</option>
+                      <option value="タクシー広告">タクシー広告</option>
+                      <option value="Facebook広告">Facebook広告</option>
+                      <option value="ネット記事">ネット記事</option>
+                      <option value="当社コラム記事">当社コラム記事</option>
+                      <option value="雑誌/新聞/TV">雑誌/新聞/TV</option>
+                      <option value="ご紹介（次の項目でご紹介者をご記入ください）">ご紹介（次の項目でご紹介者をご記入ください）</option>
+                      <option value="その他（次の項目でその他のきっかけをご記入ください）">その他（次の項目でその他のきっかけをご記入ください）</option>
+                    </select>
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="space">
+                      <p class="inner-text">　　</p>
+                    </div>
+                    <p class="textarea">
+                      ［当サービスを知ったきっかけで「ご紹介」を選択した方］ご紹介者をご記入ください
+                    </p>
+                    <textarea id="00NQ9000003Yf2D" name="00NQ9000003Yf2D" type="text"
+                      wrap="soft"></textarea>
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="space">
+                      <p class="inner-text">　　</p>
+                    </div>
+                    <p class="textarea">
+                      ［当サービスを知ったきっかけで「ご紹介」を選択した方］ご紹介者をご記入ください
+                    </p>
+                    <textarea id="00NQ9000003Yefe" name="00NQ9000003Yefe" type="text"
+                      wrap="soft"></textarea>
+                  </div>
+                  <br>
+                  <div class="column">
+                    <div class="essential"><p class="inner-text">必須</p></div>
+                    <p class="textarea">
+                      お問い合わせ内容
+                    </p>
+                    <textarea id="00NQ9000003YfQP" name="00NQ9000003YfQP" type="text" wrap="soft"></textarea>
+                  </div>
+                  <br>
                 
-                  <label for="phone">電話番号</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-                
-                  <label for="email">メールドレス</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
-                
-                  当サービスを知ったきっかけ：<select id="00NQ9000003Yf0b" name="00NQ9000003Yf0b" title="選択してください">
-                    <option value="選択してください"></option>
-                    <option value="DM">DM</option>
-                    <option value="展示会">展示会</option>
-                    <option value="プレスリリース">プレスリリース</option>
-                    <option value="Google広告">Google広告</option>
-                    <option value="ビジョン広告">ビジョン広告</option>
-                    <option value="Youtube広告">Youtube広告</option>
-                    <option value="タクシー広告">タクシー広告</option>
-                    <option value="Facebook広告">Facebook広告</option>
-                    <option value="ネット記事">ネット記事</option>
-                    <option value="当社コラム記事">当社コラム記事</option>
-                    <option value="雑誌/新聞/TV">雑誌/新聞/TV</option>
-                    <option value="ご紹介（次の項目でご紹介者をご記入ください）">ご紹介（次の項目でご紹介者をご記入ください）</option>
-                    <option value="その他（次の項目でその他のきっかけをご記入ください）">その他（次の項目でその他のきっかけをご記入ください）</option>
-                  </select><br>
-                
-                  ［当サービスを知ったきっかけで「ご紹介」を選択した方］ご紹介者をご記入ください：<textarea id="00NQ9000003Yf2D" name="00NQ9000003Yf2D" type="text"
-                    wrap="soft"></textarea><br>
-                
-                  ［当サービスを知ったきっかけで「その他」を選択した方］その他のきっかけをご記入ください：<textarea id="00NQ9000003Yefe" name="00NQ9000003Yefe" type="text"
-                    wrap="soft"></textarea><br>
-                
-                  お問い合わせ内容：<textarea id="00NQ9000003YfQP" name="00NQ9000003YfQP" type="text" wrap="soft"></textarea><br>
-                
-                  <input type="submit" name="submit">
-                
+                  <input class="submit-button" type="submit" name="submit" value="送信する">
                 </form>
               </div>
             </div>
@@ -2081,15 +2150,14 @@
               <img src="./images//sec18/footer_logo.png" alt="">
             </div>
             <div class="footer__container__content">
-
               <div class="footer__container__content__policy">
                 <a href="./policy.html">プライバシーポリシー</a>
                 <div class="footer__container__content__policy__separate"></div>
                 <a href="./regulation.html">特定商取引法に基づく表記</a>
               </div>
-                          <div class="footer__container__copyright">
-                            <p>© 2024 ○○○○○. All rights reserved.</p>
-                          </div>
+              <div class="footer__container__copyright">
+                <p>© 2024 ○○○○○. All rights reserved.</p>                 
+              </div>
             </div>
           </div>
         </div>
