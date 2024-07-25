@@ -247,7 +247,11 @@
     .firstCTABanner__CTA-button {
       top: 129px;
       left: 291px;
+      height: 94px;
       padding: 12px 20px;
+      gap: 4px;
+    }
+    .firstCTABanner__CTA-button a {
       gap: 4px;
     }
     .firstCTABanner__CTA-button__caption p {
@@ -290,20 +294,21 @@
     .serviceDetail__effect__cards__card {
       position: relative;
       justify-content: left;
-      width: 704px;
-      height: 344px;
+      width: 720px;
+      height: 372px;
     }
     .serviceDetail__effect__cards__card__container {
       gap: 16px;
     }
     .serviceDetail__effect__cards__card__container__image {
       position: absolute;
-      top: 24px;
-      left: 319px;
+      top: 32px;
+      left: 335px;
     }
     .serviceDetail__effect__cards__card__container__image img {
       width: 362px;
       height: 304px;
+      object-fit: cover;
     }
     .serviceDetail__effect__cards__card__container__description {
       width: 300px;

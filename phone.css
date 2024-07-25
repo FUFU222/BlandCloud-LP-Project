@@ -45,7 +45,7 @@
       display: block;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 4px;
     }
     .top__container__cta-button {
       top: 590px;
@@ -317,10 +317,13 @@
     .firstCTABanner__CTA-button {
       top: 158px;
       left: 139px;
+      height: auto;
       padding: 8px 20px;
       gap: 0px;
     }
-  
+    .firstCTABanner__CTA-button a {
+      gap: 0px;
+    }
     .firstCTABanner__CTA-button__caption p {
       font-size: 16px;
       line-height: 26px;
@@ -690,6 +693,9 @@
       bottom: 20px;
       left: 130px;
       padding: 8px 20px;
+      gap: 0px;
+    }
+    .secondCTABanner__CTA-button a {
       gap: 0px;
     }
   

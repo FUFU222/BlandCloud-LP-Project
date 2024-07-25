@@ -308,11 +308,9 @@ color: #304266;
   line-height: normal;
   letter-spacing: 3.6px;
 }
-/* ------------フォントファイルが効かない問題------------} */
-
-
 .company-overview__container__stats__cards__card__text__lower__num h4 {
     font-family: "Volkhov";
+    font-weight: normal;
 }
 .company-overview__container__stats__cards__card__text__lower__unit h4 {
   display: flex;
@@ -424,6 +422,7 @@ color: #304266;
   color: transparent;
   font-family: "Volkhov";
   font-size: 90px;
+  font-weight: normal;
   font-style: normal;
   font-weight: 400;
   line-height: 82px;
@@ -954,6 +953,7 @@ color: #304266;
   color: #d91e68;
   text-align: center;
   font-family: "Volkhov";
+  font-weight: normal;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -1071,6 +1071,7 @@ color: #304266;
   color: #d91e68;
   text-align: center;
   font-family: "Volkhov";
+  font-weight: normal;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -1153,6 +1154,7 @@ color: #304266;
 .serviceDetail__example__case__title__counter h3 {
   color: #5079b2;
   font-family: "Volkhov";
+  font-weight: normal;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -1425,6 +1427,7 @@ color: #304266;
   color: #5079b2;
   font-family: "Volkhov";
   font-size: 56px;
+  font-weight: normal;
   font-style: normal;
   z-index: 2;
   font-weight: 400;
@@ -1944,6 +1947,7 @@ color: #304266;
   color: #D91E68;
     text-align: center;
     font-family: "Volkhov";
+    font-weight: normal;
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
