@@ -162,7 +162,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 72px;
   letter-spacing: -2.4px;
 }
@@ -291,7 +291,7 @@ color: #304266;
 }
 .company-overview__container__stats__cards__card__text__title span {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 1.6px;
 }
 .company-overview__container__stats__cards__card__text__lower {
@@ -391,7 +391,8 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 1px;
   line-height: normal;
 }
 
@@ -471,7 +472,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 32px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 50px;
 }
 .issue__impact__container__title h2 span {
@@ -504,7 +505,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 28px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
 }
 .issue__bg {
@@ -576,7 +577,8 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 1px;
   line-height: normal;
 }
 .problemSolving__container__title h2 span {
@@ -620,7 +622,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
 }
 .problemSolving__container__cards__card__text {
@@ -700,7 +702,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 50px;
 }
 .serviceIntroduction__head-line__image {
@@ -756,7 +758,8 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 1px;
   line-height: normal;
   padding: 0px 48px;
   background-color: #fff;
@@ -818,7 +821,8 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 32px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 1px;
   line-height: 48px;
 }
 .serviceIntroduction__items__summary__container__descriptions {
@@ -837,7 +841,7 @@ color: #304266;
   line-height: 40px;
 }
 .serviceIntroduction__items__summary__container__descriptions p span {
-  font-weight: 700;
+  font-weight: 900;
     background: linear-gradient(transparent 60%,
           rgb(197, 225, 235) 60%);
 }
@@ -942,7 +946,8 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 1px;
   line-height: normal;
 }
 .serviceDetail__effect__title h2 span {
@@ -993,7 +998,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 32px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 1.6px;
   margin-bottom: -20px;
@@ -1019,7 +1024,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 1.2px;
 }
@@ -1059,7 +1064,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
 }
 .serviceDetail__reasons__title h3 span {
@@ -1125,7 +1130,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 2px;
 }
@@ -1375,7 +1380,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 36px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 3.6px;
 }
@@ -1487,7 +1492,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 2px;
 }
@@ -1504,7 +1509,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 27px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 56px;
 }
 .plan__container__description__upper span {
@@ -1519,7 +1524,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 28px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 34px;
 }
 .plan__container__description__lower h3 span {
@@ -1576,7 +1581,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 32px;
 }
 .plan__container__cards__card__box__text-area__title__price p {
@@ -1657,7 +1662,7 @@ display: flex;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 32px;
   letter-spacing: 0.9px;}
 
@@ -1727,7 +1732,7 @@ display: flex;
     font-family: "Zen Kaku Gothic Antique";
     font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 42px;
 }
 .secondCTABanner__CTA-button {
@@ -1793,7 +1798,7 @@ display: flex;
     font-family: "Zen Kaku Gothic Antique";
     font-size: 40px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
     letter-spacing: 2px;
 }
@@ -1833,7 +1838,7 @@ display: flex;
     font-family: "Zen Kaku Gothic Antique";
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 32px;
     letter-spacing: 1px;
 }
@@ -1947,13 +1952,14 @@ color: #304266;
 }
 .free-service__container__annotation h3 span {
   color: #D91E68;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .free-service__container__cards {
   display: flex;
   flex-wrap: wrap;
     width: 1000px;
+    justify-content: center;
     align-items: flex-start;
     gap: 40px;
 }
@@ -1981,7 +1987,7 @@ color: #304266;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 1.2px;
   }
@@ -2026,7 +2032,7 @@ color: #D91E68;
       font-family: "Zen Kaku Gothic Antique";
       font-size: 36px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 900;
       line-height: normal;
       letter-spacing: 1.8px;
       border-radius: 8px;
@@ -2096,7 +2102,7 @@ color: #D91E68;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
 }
 
