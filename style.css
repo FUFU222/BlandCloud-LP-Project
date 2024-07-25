@@ -148,7 +148,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  /* 171.429% */
   letter-spacing: 3.92px;
 }
 .top__container__title {
@@ -165,32 +164,17 @@ color: #304266;
   font-style: normal;
   font-weight: 700;
   line-height: 72px;
-  /* 150% */
   letter-spacing: -2.4px;
 }
 .top__container__title h1 span {
   letter-spacing: 2.4px;
 }
-
-/* .top__container__cta-wrapper {
-  /* height: 166px;
-  width: 378px; */
-  /* position: absolute;
-  bottom: 18px;
-  left: -23px;
-  align-items: center;
+.top__container__cta-button a{
+  display: block;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-} */ 
-
-
-
-
-/* .top__container__text h3:nth-of-type(2) {
-  letter-spacing: 12.32px;
-} */
-
+  gap: 12px;
+}
 .top__container__cta-button {
   position: absolute;
   top: 520px;
@@ -200,7 +184,6 @@ color: #304266;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
     border-radius: 8px;
     background: linear-gradient(270deg, #D91E68 16.42%, #F2635F 126.01%);
 }
@@ -212,7 +195,6 @@ color: #304266;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
-    /* 114.286% */
     letter-spacing: 5.6px;
 }
 .top__container__cta-button__lower h2 {
@@ -223,7 +205,6 @@ color: #304266;
     font-style: normal;
     font-weight: 900;
     line-height: 48px;
-    /* 126.316% */
     letter-spacing: 7.6px;
 }
 
@@ -234,24 +215,6 @@ color: #304266;
   width: 563px;
   height: 513px;
 }
-/* 
-.top__container__information {
-  position: absolute;
-  top: 448px;
-  right: 24px;
-  width: 270px;
-  height: 270px;
-}
-.top__container__information h2 {
-  width: 270px;
-  color: #304266;
-  text-align: right;
-  font-family: "Zen Kaku Gothic Antique";
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 54px; /* 207.692% */
-
 /* -------------company-overview---------- */
 .company-overview {
   width: 100%;
@@ -278,8 +241,7 @@ color: #304266;
 .company-overview__container__title h2 {
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: -0.8px;
 }
@@ -313,6 +275,9 @@ color: #304266;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+.company-overview__container__stats__cards__card__text__title {
+  align-items: center;
 }
 .company-overview__container__stats__cards__card__text__title h3 {
   color: #304266;
@@ -356,7 +321,7 @@ color: #304266;
   text-align: left;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px; /* 116.667% */
+  line-height: 28px;
   letter-spacing: 1.2px;
 }
 
@@ -369,7 +334,6 @@ color: #304266;
   font-weight: 400;
   line-height: normal;
 }
-/* 2枚目のカード調整 */
 .company-overview__container__stats__cards__card:nth-of-type(2) {
   padding: 27px 16px;
 }
@@ -382,7 +346,6 @@ color: #304266;
   font-size: 40px;
   letter-spacing: 2px;
 }
-/* 3枚目のカードgap調整 */
 .company-overview__container__stats__cards__card:nth-of-type(3)
   .company-overview__container__stats__cards__card__text {
   gap: 32px;
@@ -462,7 +425,7 @@ color: #304266;
   font-size: 90px;
   font-style: normal;
   font-weight: 400;
-  line-height: 82px; /* 91.111% */
+  line-height: 82px;
   margin-right: 20px;
 }
 .issue__container__cards__card__title__text h3 {
@@ -594,7 +557,6 @@ color: #304266;
   z-index: 0;
 }
 
-/* -------------------------------- */
 .problemSolving__container {
   display: flex;
   width: 100%;
@@ -739,7 +701,7 @@ color: #304266;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 166.667% */
+  line-height: 50px;
 }
 .serviceIntroduction__head-line__image {
   position: absolute;
@@ -857,7 +819,7 @@ color: #304266;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px; /* 150% */
+  line-height: 48px;
 }
 .serviceIntroduction__items__summary__container__descriptions {
   display: inline-flex;
@@ -872,7 +834,7 @@ color: #304266;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 166.667% */
+  line-height: 40px;
 }
 .serviceIntroduction__items__summary__container__descriptions p span {
   font-weight: 700;
@@ -929,7 +891,6 @@ color: #304266;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
-    /* 114.286% */
     letter-spacing: 2.8px;
 }
 .firstCTABanner__CTA-button__action-word h3 {
@@ -940,7 +901,6 @@ color: #304266;
     font-style: normal;
     font-weight: 900;
     line-height: 50px;
-    /* 125% */
     letter-spacing: 8px;
 }
 .firstCTABanner__bubble {
@@ -1069,7 +1029,7 @@ color: #304266;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
   letter-spacing: 0.9px;
 }
 .serviceDetail__effect__cards__card:nth-of-type(1)
@@ -1103,7 +1063,7 @@ color: #304266;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
-  line-height: 82px; /* 102.5% */
+  line-height: 82px;
 }
 .serviceDetail__reasons__cards {
   display: flex;
@@ -1185,7 +1145,7 @@ color: #304266;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
-  line-height: 82px; /* 102.5% */
+  line-height: 82px;
 }
 .serviceDetail__example__case__title__text h3 {
   color: #304266;
@@ -1193,7 +1153,7 @@ color: #304266;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  line-height: 41px; /* 146.429% */
+  line-height: 41px;
   letter-spacing: 1.4px;
 }
 .serviceDetail__example__case__overview {
@@ -1210,7 +1170,7 @@ color: #304266;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
   letter-spacing: 0.4px;
 }
 .serviceDetail__example__case__overview__image {
@@ -1242,7 +1202,7 @@ color: #304266;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 48px; /* 120% */
+  line-height: 48px;
   letter-spacing: 2px;
 }
 .serviceDetail__example__case__result__growth svg:nth-of-type(2){
@@ -1311,7 +1271,7 @@ color: #304266;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
   letter-spacing: 1px;
 }
 /*--- case02--- */
@@ -1322,7 +1282,7 @@ color: #304266;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
   letter-spacing: 1px;
 }
 
@@ -1429,7 +1389,7 @@ color: #304266;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
   letter-spacing: 1.2px;
 }
 .flow__container__steps {
@@ -1457,7 +1417,7 @@ color: #304266;
   font-style: normal;
   z-index: 2;
   font-weight: 400;
-  line-height: 82px; /* 146.429% */
+  line-height: 82px;
 }
 .flow__container__steps__step__title {
   position: absolute;
@@ -1469,7 +1429,7 @@ color: #304266;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
   letter-spacing: 1.2px;
   text-align: start;
 }
@@ -1493,7 +1453,7 @@ color: #304266;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
   letter-spacing: 1px;
   text-align: start;
 }
@@ -1538,7 +1498,7 @@ color: #304266;
   font-size: 27px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 207.407% */
+  line-height: 56px;
 }
 .plan__container__description__upper span {
   color: #d91e68;
@@ -1611,7 +1571,7 @@ color: #304266;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
 }
 .plan__container__cards__card__box__text-area__title__price p {
   color: #304266;
@@ -1725,7 +1685,6 @@ display: flex;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    /* 160% */
     letter-spacing: 1px;
 }
 /* ----------------secondCTABanner------------------ */
@@ -1767,7 +1726,6 @@ display: flex;
     font-style: normal;
     font-weight: 700;
     line-height: 42px;
-    /* 150% */
 }
 .secondCTABanner__CTA-button {
   position: absolute;
@@ -1789,7 +1747,6 @@ display: flex;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
-    /* 114.286% */
     letter-spacing: 5.6px;
 }
 .secondCTABanner__CTA-button__action-word h3 {
@@ -1800,7 +1757,6 @@ display: flex;
     font-style: normal;
     font-weight: 900;
     line-height: 48px;
-    /* 126.316% */
     letter-spacing: 7.6px;
 }
 
@@ -1870,7 +1826,6 @@ display: flex;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    /* 160% */
     letter-spacing: 1px;
 }
 .faq__list__item__answer {
@@ -1879,15 +1834,11 @@ display: flex;
     align-items: flex-start;
     gap: 40px;
     max-height: 0;
-        /* アンサー部分を非表示にするために初期状態では高さを0に設定 */
     overflow: hidden;
-        /* アンサー部分が非表示の際にコンテンツがはみ出さないようにする */
     transition: max-height 0.3s ease;
-        /* 開閉時のアニメーションを追加 */
 }
 .faq__list__item__answer.open {
   max-height: 200px;
-  /* 必要に応じて適切な高さに調整 */
 }
 .faq__list__item__answer__symbol {
   width: 24px;
@@ -1901,7 +1852,6 @@ display: flex;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    /* 180% */
     letter-spacing: 1px;
 }
 /* --------freeService--------- */
@@ -1965,7 +1915,6 @@ color: #304266;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
-    /* 166.667% */
 }
 .free-service__container__annotation h3 {
   color: #304266;
@@ -1986,7 +1935,6 @@ color: #304266;
     font-weight: 400;
     line-height: 82px;
     padding: 5px;
-    /* 146.429% */  
 }
 .free-service__container__annotation h3 span {
   color: #D91E68;
@@ -2268,10 +2216,50 @@ color: #D91E68;
             .policy__back-to-top a:hover {
               text-decoration: underline;
             }
-
-
-
-
+/*-------------------thanks--------------------  */
+            .thanks {
+              font-family: 'Arial', sans-serif;
+              line-height: 1.6;
+              padding: 20px;
+              color: #333;
+              background-color: #fff;
+              max-width: 1000px;
+              margin: 0 auto;
+              border: 1px solid #ccc;
+            }
+            .thanks h1 {
+              text-align: center;
+              font-size: 32px;
+              margin-bottom: 70px;
+            }
+            .thanks h2 {
+              font-size: 24px;
+              margin-top: 70px;
+              margin-bottom: 60px;
+            }
+            .thanks p {
+              font-size: 16px;
+              margin: 60px 0;
+            }
+            .thanks__contact {
+              margin-top: 70px;
+            }
+            .thanks__footer {
+              text-align: right;
+              margin-top: 80px;
+            }
+            .thanks__back-to-top {
+              text-align: center;
+              margin-top: 70px;
+            }
+            .thanks__back-to-top a {
+              color: #000;
+              text-decoration: none;
+              font-weight: bold;
+            }
+            .thanks__back-to-top a:hover {
+              text-decoration: underline;
+            }
 /* -------------contact-form--------------- */
 .column {
   display: flex;
