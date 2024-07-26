@@ -2063,38 +2063,51 @@ j<!DOCTYPE html>
               <div class="contact__container__form">
                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h0000019Ruf"
                   method="POST">
-                
                   <input type=hidden name="oid" value="00D5h0000019Ruf">
                   <input type=hidden name="retURL" value="https://solution.brandcloud.co.jp/lp/thanks.html">
-                
-                
-                  <!-- 注意: デバッグモードでテスト完了後、削除してください        -->
                   <input type="hidden" name="debug" value=1>
                   <input type="hidden" name="debugEmail" value="marina.kurosu@brandcloud.co.jp">
-                  <!-- 注意 -->
+
                   <div class="column">
-                    <div class="essential"><p class="inner-text">必須</p></div>
-                    <label for="company">法人名</label><input id="company" maxlength="40" name="company" size="20" type="text" required /><br>
+                    <div class="sp upper">
+                      <div class="essential"><p class="inner-text">必須</p></div>
+                    <label for="company">法人名</label>
+                    </div>
+                    <div class="sp lower">
+                      <input id="company" maxlength="40" name="company" size="20" type="text" required /><br>
+                    </div>
                   </div>
                   <div class="column">
-                    <div class="any">
-                      <p class="inner-text">任意</p>
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <label for="url">公式HP URL</label>
+                    </div>  
+                    <div class="sp lower">
+                      <input id="url" maxlength="80" name="url" size="20" type="text" />
                     </div>
-                    <label for="url">公式HP URL</label><input id="url" maxlength="80" name="url" size="20" type="text"/>
                   </div>
-                  <br>
                   <div class="column">
-                    <div class="essential">
-                      <p class="inner-text">必須</p>
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <label for="last_name">お名前</label>
+                    </div>  
+                    <div class="sp lower">
+                      <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required />
                     </div>
-                    <label for="last_name">お名前</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" required />
                   </div>
-                  <br>
                   <div class="column">
-                    <div class="essential">
-                      <p class="inner-text">必須</p>
-                    </div>
-                    <p class="select">部署名</p><select id="00NQ9000001uKbN" name="00NQ9000001uKbN" title="選択してください" required>
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <p class="select">部署名</p>
+                    </div>  
+                    <div class="sp lower">
+                    <select id="00NQ9000001uKbN" name="00NQ9000001uKbN" title="選択してください" required>
                       <option value="選択してください"></option>
                       <option value="役員(代表含む)">役員(代表含む)</option>
                       <option value="マーケティング">マーケティング</option>
@@ -2111,42 +2124,47 @@ j<!DOCTYPE html>
                       <option value="その他（特記事項に明記）">その他（特記事項に明記）</option>
                       <option value="部署無し">部署無し</option>
                     </select>
-                  </div>
-                  <br>
-                  <div class="column">
-                    <div class="essential">
-                      <p class="inner-text">必須</p>
                     </div>
-                    <p class="select">役職</p><select id="00NQ9000003Yeqv" name="00NQ9000003Yeqv" title="選択してください" required>
-                    <option value="選択してください"></option>
-                    <option value="役員/経営者">役員/経営者</option>
-                    <option value="部長">部長</option>
-                    <option value="課長/マネージャー">課長/マネージャー</option>
-                    <option value="主任">主任</option>
-                    <option value="一般社員">一般社員</option>
-                    <option value="その他/インターン">その他/インターン</option>
-                  </select>
                   </div>
-                  <br>
                   <div class="column">
-                    <div class="essential">
-                      <p class="inner-text">必須</p>
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <p class="select">役職</p>
+                    </div>  
+                    <div class="sp lower">
+                    <select id="00NQ9000003Yeqv" name="00NQ9000003Yeqv" title="選択してください" required>
+                      <option value="選択してください"></option>
+                      <option value="役員/経営者">役員/経営者</option>
+                      <option value="部長">部長</option>
+                      <option value="課長/マネージャー">課長/マネージャー</option>
+                      <option value="主任">主任</option>
+                      <option value="一般社員">一般社員</option>
+                      <option value="その他/インターン">その他/インターン</option>
+                    </select>
                     </div>
-                    <label for="phone">電話番号</label><input id="phone" maxlength="40" name="phone" size="20" type="text" required/>
                   </div>
-                  <br>
                   <div class="column">
-                    <div class="essential">
-                      <p class="inner-text">必須</p>
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <label for="phone">電話番号</label>
+                    </div>  
+                    <div class="sp lower">
+                    <input id="phone" maxlength="40" name="phone" size="20" type="text" required />
                     </div>
-                    <label for="email">メールドレス</label><input id="email" maxlength="80" name="email" size="20" type="text" required/>
                   </div>
-                  <br>
                   <div class="column">
-                    <div class="essential">
-                      <p class="inner-text">必須</p>
-                    </div>
-                    <p class="select">当サービスを知ったきっかけ</p><select id="00NQ9000003Yf0b" name="00NQ9000003Yf0b" title="選択してください" required>
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <p class="select">当サービスを知ったきっかけ</p>
+                    </div>  
+                    <div class="sp lower">
+                    <select id="00NQ9000003Yf0b" name="00NQ9000003Yf0b" title="選択してください" required>
                       <option value="選択してください"></option>
                       <option value="DM">DM</option>
                       <option value="展示会">展示会</option>
@@ -2162,6 +2180,27 @@ j<!DOCTYPE html>
                       <option value="ご紹介（次の項目でご紹介者をご記入ください）">ご紹介（次の項目でご紹介者をご記入ください）</option>
                       <option value="その他（次の項目でその他のきっかけをご記入ください）">その他（次の項目でその他のきっかけをご記入ください）</option>
                     </select>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="sp upper">
+                      <div class="essential">
+                        <p class="inner-text">必須</p>
+                      </div>
+                      <p class="textarea">
+                        ［当サービスを知ったきっかけで「ご紹介」を選択した方］ご紹介者をご記入ください
+                      </p>
+                    </div>  
+                    <div class="sp lower">
+                      <textarea id="00NQ9000003Yf2D" name="00NQ9000003Yf2D" type="text" wrap="soft"></textarea>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="space">
+                      <p class="inner-text">　　</p>
+                    </div>
+
+
                   </div>
                   <br>
                   <div class="column">
@@ -2169,18 +2208,7 @@ j<!DOCTYPE html>
                       <p class="inner-text">　　</p>
                     </div>
                     <p class="textarea">
-                      ［当サービスを知ったきっかけで「ご紹介」を選択した方］ご紹介者をご記入ください
-                    </p>
-                    <textarea id="00NQ9000003Yf2D" name="00NQ9000003Yf2D" type="text"
-                      wrap="soft"></textarea>
-                  </div>
-                  <br>
-                  <div class="column">
-                    <div class="space">
-                      <p class="inner-text">　　</p>
-                    </div>
-                    <p class="textarea">
-                      ［当サービスを知ったきっかけで「ご紹介」を選択した方］ご紹介者をご記入ください
+                      ［当サービスを知ったきっかけで「その他」を選択した方］その他のきっかけをご記入ください
                     </p>
                     <textarea id="00NQ9000003Yefe" name="00NQ9000003Yefe" type="text"
                       wrap="soft"></textarea>

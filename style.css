@@ -2135,10 +2135,14 @@ color: #D91E68;
   margin:64px 0 103px 0px ;
 }
 /* -------------contact-form--------------- */
+form {
+  line-height: 1.5; /* 行間の設定 */
+  margin: 0; /* デフォルトのマージンをリセット */
+}
 .column {
   display: flex;
   justify-content: left;
-  align-items: start;
+  align-items: start;margin-bottom: 40px;
 }
 
 .essential,
@@ -2153,20 +2157,19 @@ color: #D91E68;
   align-items: center;
   border-radius: 4px;
 }
-
-.inner-text {
-  color: #FFF;
-  font-family: "Zen Kaku Gothic Antique";
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .essential {
   background: #d91e68;
 }
 
 .any {
   background: #ccc;
+}
+
+.inner-text {
+  color: #FFF;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .column label,
@@ -2205,6 +2208,7 @@ color: #D91E68;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-top: 20px;
   border-radius: 8px;
   border: none;
 }

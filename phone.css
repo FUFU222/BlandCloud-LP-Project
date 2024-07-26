@@ -901,7 +901,7 @@
   
     .contact {
       width: 375px;
-      height: 2700px;
+      height: 3500px;
     }
     .contact__container {
       top:29px;
@@ -933,9 +933,47 @@
       height: 208px;
     }
     .contact__bg-lower {
-      height: 2560px;
+      height: 3360px;
       width: 376px;
     }
+    .column {
+      flex-direction: column;
+      width: 311px;
+    }
+    .upper {
+      display: flex;
+    }
+    .column input,
+    .column select {
+      width: 311px;
+      height: 35px;
+      font-size: 16px;
+      stroke-width: 1px;
+      stroke: #304266;
+    } 
+    .column textarea {
+      width: 311px;
+      height: 200px;
+    }
+    .column label,
+    .column .select,
+    .column .textarea {
+      font-size: 16px;
+      width: auto;
+    }
+    .inner-text {
+      font-size: 12px;
+    }
+    .essential,
+    .any,
+    .space {
+      margin-right: 8px;
+    }
+    .submit-button {
+      width: 311px;
+    }
+/* ------------------contactform--------------- */
+    
     .footer {
       width: 376px;
     }

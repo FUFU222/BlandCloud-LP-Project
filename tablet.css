@@ -647,18 +647,29 @@
       font-size: 32px;
       letter-spacing: 1.6px;
     }
+
+    /* -------------contact------------ */
     .contact {
       width: 768px;
-      height:  1760px;
+      height:  2400px;
+    }
+    .contact__bg-upper {
+      width: 1440px;
+      clip-path: inset(0 335px 0 335px);
+    }
+    .contact__bg-lower {
+      height: 1800px;
+      width: 768px;
     }
     .contact__container {
       top: 70px;
     }
     .contact__container__title {
-      gap: 20px;
+      gap: 8px;
     }
     .contact__container__title h2 {
       font-size: 24px;
+      margin-bottom: 12px;
     }
     .contact__container__title__texts p {
       font-size: 18px;
@@ -668,15 +679,25 @@
     }
     .contact__container__form {
       width: 704px;
-      height: 500px;
+      height: auto;
     }
-    .contact__bg-upper {
-      width: 1440px;
-      clip-path: inset(0 335px 0 335px);
+    .column label,
+    .column .select,
+    .column .input,
+    .column .textarea {
+      font-size: 20px;
+      width: 350px;
     }
-    .contact__bg-lower {
-      height: 1200px;
-      width: 768px;
+    .inner-text {
+      font-size: 10px;
+    }
+    .essential,
+    .any,
+    .space {
+      margin-right: 12px;
+    }
+    .submit-button {
+      width: 704px;
     }
 /* ------------footer------------- */
 .footer {
