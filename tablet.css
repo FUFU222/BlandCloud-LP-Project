@@ -72,6 +72,9 @@
     height: 390px;
   }
   /* ------------companyOverview-------- */
+  .company-overview {
+    width: 768px;
+  }
   .company-overview__container__title h2 {
     font-size: 24px;
   }
@@ -99,6 +102,9 @@
     padding: 8px;
   }
   /* ------------issue---------------- */
+  .issue {
+    width: 768px;
+  }
   .issue__container {
     width: 768px;
     margin: 0 auto;
@@ -179,6 +185,9 @@
     gap: 24px, 32px;
   }
   /* --------------service introduction------------ */
+  .serviceIntroduction {
+    width: 768px;
+  }
   .serviceIntroduction__head-line {
     width: 768px;
     height: 180px;
@@ -275,6 +284,7 @@
   }
   /* ------------service-detail------------- */
   .serviceDetail {
+    width: 768px;
     padding: 80px 0 90px 0;
   }
   .serviceDetail__effect__title h2 {

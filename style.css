@@ -117,8 +117,8 @@
 }
 
 /*--------------- top ----------------- */
-html {
-  max-width: 1366px;
+body {
+  overflow-x: hidden;
 }
 .top {
   width: 1366px;

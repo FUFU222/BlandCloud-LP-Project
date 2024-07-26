@@ -88,6 +88,9 @@
   }
 
   /* ------------companyOverview-------- */
+  .company-overview {
+    width: 375px;
+  }
   .company-overview__container {
     margin: 64px 0px;
   }
@@ -131,6 +134,7 @@
 
   /* ------------issue---------------- */
   .issue {
+    width: 375px;
     padding-bottom: 64px;
   }
   .issue__container {
@@ -210,13 +214,13 @@
   /* -----------------problem-solving-------------- */
   .problemSolving {
     height: 2870px;
-    width: 376px;
+    width: 375px;
   }
   .problemSolving__bg-upper {
     clip-path: inset(0 778px 0 778px);
   }
   .problemSolving__bg-lower {
-    width: 376px;
+    width: 375px;
     height: 2450px;
   }
   .problemSolving__container {
@@ -227,14 +231,14 @@
   }
 
   .problemSolving__container__cards {
-    width: 376px;
+    width: 375px;
     justify-content: center;
     gap: 16px;
   }
 
   /* --------------service introduction------------ */
   .serviceIntroduction {
-    width: 376px;
+    width: 375px;
   }
   .serviceIntroduction__head-line {
     width: 375px;
@@ -363,6 +367,7 @@
 
   /* ------------service-detail------------- */
   .serviceDetail {
+    width: 375px;
     padding: 64px 0 62px 0;
   }
   .serviceDetail__effect {
