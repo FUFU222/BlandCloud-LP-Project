@@ -8,8 +8,8 @@
   .tab {
     display: block;
   }
-  body {
- 
+  html {
+    max-width: 768px;
   }
   .top {
     width: 768px;
@@ -579,6 +579,9 @@
     .faq__list__item__question {
       width: 624px;
     }
+    .faq__list__item__question.open {
+      margin-bottom: 16px;
+    }
     .faq__list__item__question__box__text h4 {
       width: 519px;
       font-size: 18px;
@@ -651,14 +654,14 @@
     /* -------------contact------------ */
     .contact {
       width: 768px;
-      height:  1700px;
+      height:  1680px;
     }
     .contact__bg-upper {
       width: 1440px;
       clip-path: inset(0 335px 0 335px);
     }
     .contact__bg-lower {
-      height: 1800px;
+      height: 1500px;
       width: 768px;
     }
     .contact__container {
@@ -705,7 +708,7 @@
       height: 200px;
     }
     .inner-text {
-      font-size: 10px;
+      font-size: 16px;
     }
     .essential,
     .any,

@@ -112,6 +112,9 @@
 }
 
 /*--------------- top ----------------- */
+html {
+  max-width: 1366px;
+}
 .top {
   width: 1366px;
   height: 768px;
@@ -2133,6 +2136,8 @@ color: #D91E68;
 .contact__container__form {
   width: 100%;
   margin:64px 0 103px 0px ;
+  display: flex;
+  justify-content: center;
 }
 /* -------------contact-form--------------- */
 form {
@@ -2152,8 +2157,8 @@ form {
 .any,
 .space {
   display: flex;
-  width: 64px;
-  height: 35px;
+  /* width: 64px;
+  height: 35px; */
   padding: 6px 16px;
   margin-right: 19px;
   justify-content: center;
@@ -2220,6 +2225,7 @@ form {
   color: #fff;
   font-size: 32px;
   background-color: #8095b2;
+  cursor: pointer;
 }
   /* -----------footer----------- */
   .footer {
