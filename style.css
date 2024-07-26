@@ -219,8 +219,6 @@ html {
   position: absolute;
   top: 165px;
   left: 670px;
-  width: 563px;
-  height: 513px;
 }
 /* -------------company-overview---------- */
 .company-overview {
@@ -663,7 +661,7 @@ html {
 
 /* ------------serviceIntroduction-------------- */
 .serviceIntroduction {
-  width: 1366px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1335,7 +1333,7 @@ html {
 
 /* ---------flow---------- */
 .flow {
-  width: 1366px;
+  width: auto;
   height: 1748px;
   display: flex;
   text-align: center;
@@ -2303,7 +2301,7 @@ form {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   padding: 20px;
-  color: #333;
+  color: #304266;
   background-color: #fff;
   max-width: 1000px;
   margin: 0 auto;
@@ -2315,74 +2313,65 @@ form {
 .policy h1 {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 70px;
+  margin: 60px 0;
 }
 .policy h2 {
   font-size: 24px;
   margin-top: 70px;
-  margin-bottom: 60px;
+  margin: 40px 0;
 }
 .policy p {
   font-size: 16px;
-  margin: 60px 0;
-}
-.policy__contact {
-  margin-top: 70px;
-}
-.policy__footer {
-  text-align: right;
-  margin-top: 80px;
+  margin: 30px 0;
 }
 .policy__back-to-top {
   text-align: center;
   margin-top: 70px;
 }
 .policy__back-to-top a {
-  color: #000;
+  color: #304266;
   text-decoration: none;
   font-weight: bold;
 }
 .policy__back-to-top a:hover {
   text-decoration: underline;
 }
+td a {
+  color: #304266;
+}
 /*-------------------thanks--------------------  */
 .thanks {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   padding: 20px;
-  color: #333;
+  color: #304266;
   background-color: #fff;
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
-  border: 1px solid #ccc;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 .thanks h1 {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 70px;
+  margin: 60px 0;
 }
 .thanks h2 {
   font-size: 24px;
-  margin-top: 70px;
-  margin-bottom: 60px;
+  margin: 40px 0;
 }
 .thanks p {
   font-size: 16px;
-  margin: 60px 0;
-}
-.thanks__contact {
-  margin-top: 70px;
-}
-.thanks__footer {
-  text-align: right;
-  margin-top: 80px;
+  margin: 30px 0;
 }
 .thanks__back-to-top {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .thanks__back-to-top a {
-  color: #000;
+  color: #304266;
   text-decoration: none;
   font-weight: bold;
 }

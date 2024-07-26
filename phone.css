@@ -233,6 +233,9 @@
   }
 
   /* --------------service introduction------------ */
+  .serviceIntroduction {
+    width: 376px;
+  }
   .serviceIntroduction__head-line {
     width: 375px;
     height: 300px;
@@ -906,7 +909,7 @@
     font-size: 16px;
     letter-spacing: 0.8px;
   }
-
+  /* ----------contact--------- */
   .contact {
     width: 375px;
     height: 2050px;
@@ -998,7 +1001,8 @@
     font-size: 16px;
     letter-spacing: 0.8px;
   }
-  /* ------------------contactform--------------- */
+
+  /* ------------------footer--------------- */
 
   .footer {
     width: 376px;
@@ -1019,5 +1023,23 @@
   .footer__container__copyright p {
     font-size: 8px;
     letter-spacing: 0.8px;
+  }
+
+  /* ---------thanks policy regulation--------- */
+  .thanks h1 {
+    font-size: 16px;
+  }
+  .policy h1 {
+    font-size: 24px;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+  th {
+    margin: 16px 0;
+  }
+  td {
+    margin-bottom: 32px;
   }
 }
