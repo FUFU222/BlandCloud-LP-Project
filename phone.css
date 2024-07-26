@@ -259,8 +259,7 @@
       left: 161px;
     }
     .serviceIntroduction__head-line__image img {
-      width: 268px;
-      height: 271px;
+      width: auto;
     }
     .serviceIntroduction__head-line__bg {
         top: 70px;
@@ -385,14 +384,19 @@
     .serviceDetail__effect__cards__card {
       gap: 10px;
       padding: 16px;
-      height: 458px;
     }
   
     .serviceDetail__effect__cards__card__container {
       gap: 12px;
     }
+    .serviceDetail__effect__cards__card__container__wrapper {
+      gap: 8px;
+    }
     .serviceDetail__effect__cards__card__container__description {
       width: 300px;
+    }
+    .serviceDetail__effect__cards__card__container__description p {
+      height: 100%;
     }
   
     .serviceDetail__effect__cards__card__container__title h3 {
@@ -458,7 +462,7 @@
     }
   
     .serviceDetail__example__case {
-      padding: 24px 16px;
+      padding: 24px 16px 30px 16px;
       gap: 16px;
     }
     .serviceDetail__example__case:nth-of-type(3) {
@@ -739,8 +743,8 @@
     }
   
     .secondCTABanner__image img {
-      width: 203px;
-      height: 214px;
+      width:176px;
+      height: auto;
       left: 0px;
       bottom: -5px;
     }

@@ -978,7 +978,7 @@ color: #304266;
   align-self: stretch;
 }
 .serviceDetail__effect__cards__card {
-  height: 656px;
+  height: 100%;
   display: flex;
   padding: 32px 24px;
   justify-content: center;
@@ -992,6 +992,11 @@ color: #304266;
   align-items: center;
   gap: 32px;
 }
+.serviceDetail__effect__cards__card__container__wrapper {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
 .serviceDetail__effect__cards__card__container__title h3 {
   color: #304266;
   text-align: center;
@@ -1001,7 +1006,6 @@ color: #304266;
   font-weight: 900;
   line-height: normal;
   letter-spacing: 1.6px;
-  margin-bottom: -20px;
 }
 .serviceDetail__effect__cards__card__container__japaneseTitle h3 {
   color: #304266;
@@ -1037,6 +1041,7 @@ color: #304266;
 .serviceDetail__effect__cards__card__container__description p {
   color: #304266;
   font-family: "Zen Kaku Gothic Antique";
+  height: 150px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2051,7 +2056,7 @@ color: #D91E68;
   align-items: center;
   position: relative;
   background-color: #fff;
-  z-index: 1; /* ここを修正 */
+  z-index: 1;
 }
 
 .contact__bg-upper {
@@ -2073,7 +2078,6 @@ color: #D91E68;
   width: 1366px;
   height: 1498px;
   position: absolute;
-  /* top: 340px; */
   bottom: 0px;
   flex-shrink: 0;
   background: #eaedf2;
@@ -2089,14 +2093,13 @@ color: #D91E68;
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  z-index: 2; /* ここを修正 */
+  z-index: 2;
 }
 
 .contact__container__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
 }
 
 .contact__container__title h2 {
@@ -2104,6 +2107,7 @@ color: #D91E68;
   text-align: center;
   font-family: "Zen Kaku Gothic Antique";
   font-size: 40px;
+  margin-bottom: 32px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -2128,6 +2132,87 @@ color: #D91E68;
 
 .contact__container__form {
   width: 100%;
+  margin:64px 0 103px 0px ;
+}
+/* -------------contact-form--------------- */
+.column {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+}
+
+.essential,
+.any,
+.space {
+  display: flex;
+  width: 64px;
+  height: 35px;
+  padding: 6px 16px;
+  margin-right: 19px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.inner-text {
+  color: #FFF;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.essential {
+  background: #d91e68;
+}
+
+.any {
+  background: #ccc;
+}
+
+.column label,
+.column .select,
+.column .textarea {
+  width: 312px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.column input,
+.column select {
+  width: 480px;
+  height: 35px;
+  stroke-width: 1px;
+  stroke: #304266;
+}
+
+.column textarea {
+  width: 480px;
+  height: 300px;
+  stroke-width: 1px;
+  stroke: #304266;
+}
+
+.submit-button {
+  display: flex;
+  width: 915px;
+  padding: 16px 160px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.submit-button[value="送信する"] {
+  color: #fff;
+  font-size: 32px;
+  background-color: #8095b2;
 }
   /* -----------footer----------- */
   .footer {
@@ -2283,75 +2368,3 @@ color: #D91E68;
             .thanks__back-to-top a:hover {
               text-decoration: underline;
             }
-/* -------------contact-form--------------- */
-.column {
-  display: flex;
-  justify-content: left;
-  align-items: start;
-}
-.essential,
-.any,
-.space {
-  display: flex;
-  width: 64px;
-  height: 35px;
-  padding: 6px 16px;
-  margin-right: 19px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-}
-.inner-text{
-  color: #FFF;
-    font-family: "Zen Kaku Gothic Antique";
-    font-size: 16px;
-    font-weight: 500;
-}
-.essential {
-    background: #d91e68;
-}
-.any {
-    background: #ccc;
-}
-.column label,
-.column .select,
-.column .textarea {
-  width: 312px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  color: #304266;
-    font-family: "Zen Kaku Gothic Antique";
-    font-size: 24px;
-    font-weight: 500;
-    margin-right: 40px;
-}
-.column input,
-.column select  {
-  width: 480px;
-    height: 35px;
-      stroke-width: 1px;
-      stroke: #304266;
-}
-.column textarea {
-  width: 480px;
-    height: 300px;
-      stroke-width: 1px;
-      stroke: #304266;
-}
-.submit-button {
-  display: flex;
-  width: 915px;
-  padding: 16px 160px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 8px;
-  padding: 16px 160px;
-  border: none;
-}
-.submit-button[value="送信する"] {
-  color: #fff;
-  font-size: 32px;
-  background-color: #8095b2;
-}
