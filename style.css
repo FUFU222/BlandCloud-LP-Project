@@ -117,9 +117,6 @@
 }
 
 /*--------------- top ----------------- */
-body {
-  overflow-x: hidden;
-}
 .top {
   width: 1366px;
   height: 768px;

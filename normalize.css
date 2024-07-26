@@ -11,6 +11,7 @@ footer {
 html {
   background-color: #fff;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 body {
   width: 100%;
@@ -20,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 a {
