@@ -901,7 +901,16 @@
   
     .contact {
       width: 375px;
-      height: 3500px;
+      height: 2100px;
+    }
+    .contact__bg-upper {
+      clip-path: inset(0 84px 0 84px);
+      width: 545px;
+      height: 208px;
+    }
+    .contact__bg-lower {
+      height: 2000px;
+      width: 376px;
     }
     .contact__container {
       top:29px;
@@ -925,16 +934,6 @@
     .contact__container__form {
       width: 343px;
       height: 500px;
-    }
-  
-    .contact__bg-upper {
-      clip-path: inset(0 84px 0 84px);
-      width: 545px;
-      height: 208px;
-    }
-    .contact__bg-lower {
-      height: 3360px;
-      width: 376px;
     }
     .column {
       flex-direction: column;
