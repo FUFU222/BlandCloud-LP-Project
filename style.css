@@ -724,7 +724,7 @@ color: #304266;
   display: flex;
   width: 1100px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
   padding: 120px 0 163px 0;
 }
@@ -1187,8 +1187,6 @@ color: #304266;
   letter-spacing: 0.4px;
 }
 .serviceDetail__example__case__overview__image {
-  width: 355px;
-  height: 224px;
   flex-shrink: 0;
 }
 .serviceDetail__example__case__result {
@@ -1693,7 +1691,7 @@ display: flex;
     font-family: "Zen Kaku Gothic Antique";
     font-size: 20px;
     font-style: normal;
-    width: 80%;
+    width: 90%;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 1px;
@@ -1785,7 +1783,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 120px 0;
+  padding: 64px 0;
 }
 .faq__list {
   display: flex;
@@ -1855,7 +1853,7 @@ display: flex;
     transition: max-height margin-botom 0.3s ease;
 }
 .faq__list__item__answer.open {
-  max-height: 200px;
+  max-height: 400px;
 }
 .faq__list__item__answer__symbol {
   width: 24px;
@@ -2075,7 +2073,8 @@ color: #D91E68;
   width: 1366px;
   height: 1498px;
   position: absolute;
-  top: 340px;
+  /* top: 340px; */
+  bottom: 0px;
   flex-shrink: 0;
   background: #eaedf2;
   z-index: 0;
@@ -2088,7 +2087,7 @@ color: #D91E68;
   width: 1000px;
   height: 100%;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 64px;
   z-index: 2; /* ここを修正 */
 }

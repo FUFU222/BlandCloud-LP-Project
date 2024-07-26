@@ -9,6 +9,7 @@
     display: block;
   }
     .top {
+      width: 375px;
       height: 812px;
       padding: 0 10px 92px 10px;
       background-image: none;
@@ -84,6 +85,9 @@
     }
   
     /* ------------companyOverview-------- */
+    .company-overview__container {
+      margin:64px 0px;
+    }
     .company-overview__container__title h2 {
       font-size: 22px;
         font-style: normal;
@@ -123,6 +127,9 @@
     }
   
     /* ------------issue---------------- */
+    .issue {
+      padding-bottom: 64px;
+    }
     .issue__container {
       width: 343px;
       margin: 0 auto;
@@ -155,7 +162,10 @@
     .issue__container__cards__card__title__text h3 span:nth-of-type(1) {
       letter-spacing: 1.8px;
     }
-  
+    .issue__impact__container {
+      width: 376px;
+      gap: 24px;
+    }
     .issue__impact__container__items {
       width: 350px;
       gap: 24px;
@@ -165,11 +175,7 @@
       width: 302px;
       height: 302px;
     }
-  
-    .issue__impact__container {
-      width: 376px;
-    }
-  
+
     .issue__impact__container__title h2 {
       font-size: 20px;
       line-height: 30px;
@@ -198,19 +204,19 @@
   
     /* -----------------problem-solving-------------- */
     .problemSolving {
-      height: 2900px;
+      height: 2870px;
       width: 376px;
     }
-  
     .problemSolving__bg-upper {
       clip-path: inset(0 778px 0 778px);
     }
-  
     .problemSolving__bg-lower {
       width: 376px;
-      height: 2500px;
+      height: 2450px;
     }
-  
+    .problemSolving__container {
+      top: 44px;
+    }
     .problemSolving__container__title h2 {
       font-size: 24px;
     }
@@ -259,6 +265,9 @@
     .serviceIntroduction__head-line__bg {
         top: 70px;
         right: 10px;
+    }
+    .serviceIntroduction__items{
+      padding: 64px 0px;
     }
     .serviceIntroduction__items__item__title h3 {
       font-size: 24px;
@@ -349,7 +358,9 @@
     .serviceDetail {
       padding: 64px 0 62px 0;
     }
-  
+    .serviceDetail__effect {
+      gap: 16px;
+    }
     .serviceDetail__effect__title h2 {
       font-size: 22px;
       letter-spacing: 0px;
@@ -368,6 +379,7 @@
   
     .serviceDetail__effect__cards {
       flex-direction: column;
+      gap: 16px;
     }
   
     .serviceDetail__effect__cards__card {
@@ -406,9 +418,11 @@
   
     .serviceDetail__reasons {
       margin-top: 62px;
+      gap: 12px;
     }
     .serviceDetail__reasons__title h3 {
       font-size: 22px;
+      line-height: 40px;
     }
     .serviceDetail__reasons__title h3 span {
       font-size: 32px;
@@ -428,14 +442,14 @@
       letter-spacing: 2.2px;
     }
     .serviceDetail__reasons__cards__card__image img {
-      width: 220px;
+      max-width: 220px;
       height: auto;
-      clip-path: inset(8px 0 8px 0);
     }
   
     .serviceDetail__example {
       width: 344px;
       gap: 24px;
+      margin-top: 85px;
     }
   
     .serviceDetail__example__title {
@@ -446,6 +460,9 @@
     .serviceDetail__example__case {
       padding: 24px 16px;
       gap: 16px;
+    }
+    .serviceDetail__example__case:nth-of-type(3) {
+      height: 1020px;
     }
     .serviceDetail__example__case__title__counter h3 {
       font-size: 24px;
@@ -478,6 +495,7 @@
     }
     .serviceDetail__example__case__result {
       align-items: start;
+      gap: 24px;
     }
     .serviceDetail__example__case__result__growth__text {
       font-size: 24px;
@@ -522,7 +540,7 @@
   
     .serviceDetail__example__case__result__review__user__comment {
       position: absolute;
-      top: 48px;
+      top: 42px;
       left: 152px;
       align-self: flex-end;
       width: 160px;
@@ -561,7 +579,7 @@
   
     /* ---------------flow--------------- */
     .flow {
-      height: 2300px;
+      height: 2120px;
     }
   
     .flow__bg-upper {
@@ -569,10 +587,14 @@
       clip-path: inset(0 778px 0 778px);
     }
     .flow__bg-lower {
-      height: 1900px;
+      height: 1784px;
       width: 377px;
     }
   
+    .flow__container {
+      top: 63.9px;
+      gap: 24px;
+    }
     .flow__container__title-box {
       gap: 16px;
     }
@@ -643,6 +665,9 @@
       line-height: 20px
     }
     /* ------------------------plan---------------- */
+    .plan {
+      padding: 64px 16px;
+    }
     .plan__container {
       width: 367px;
       gap: 24px;
@@ -680,7 +705,9 @@
       font-size: 14px;
       line-height: 24px;
       letter-spacing: 0.7px;
-      gap: 16px;
+    }
+    .plan__container__annotation p br {
+      height: 12px;      
     }
   
     /*-------------secondCTAbanner---------------  */
@@ -730,7 +757,7 @@
       padding: 64px 0;
     }
     .faq__list__title h2 {
-      font: 22px;
+      font-size: 22px;
       letter-spacing: 1.1px;
     }
   
@@ -768,19 +795,22 @@
     }
   
     /* --------------------free-service-------------------- */
+    .free-service {
+      padding-bottom: 64px;
+    }
     .free-service__container {
-      gap: 40px;
+      gap: 24px;
       justify-content: center;
     }
   
     .free-service__container__head {
       position: relative;
       width: 311px;
-      gap: 32px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      margin-bottom: 40px;
     }
   
     .free-service__container__head__text-area {
@@ -867,9 +897,11 @@
   
     .contact {
       width: 375px;
-      height: 1000px;
+      height: 2700px;
     }
-  
+    .contact__container {
+      top:29px;
+    }
     .contact__container__title {
       gap: 20px;
     }
@@ -892,14 +924,16 @@
     }
   
     .contact__bg-upper {
-      clip-path: inset(0 778px 0 778px);
+      clip-path: inset(0 84px 0 84px);
+      width: 545px;
+      height: 208px;
     }
     .contact__bg-lower {
-      height: 800px;
+      height: 2560px;
       width: 376px;
     }
     .footer {
-      width: 376pxpx;
+      width: 376px;
     }
     .footer__container {
       width: 319px;

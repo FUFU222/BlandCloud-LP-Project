@@ -8,7 +8,9 @@
   .tab {
     display: block;
   }
-
+  body {
+ 
+  }
   .top {
     width: 768px;
     height: 1024px;
@@ -641,7 +643,10 @@
     }
     .contact {
       width: 768px;
-      height:  1000px;
+      height:  1760px;
+    }
+    .contact__container {
+      top: 70px;
     }
     .contact__container__title {
       gap: 20px;
@@ -660,11 +665,11 @@
       height: 500px;
     }
     .contact__bg-upper {
-      width: 1932px;
-      clip-path: inset(0 582px 0 582px);
+      width: 1440px;
+      clip-path: inset(0 335px 0 335px);
     }
     .contact__bg-lower {
-      height: 800px;
+      height: 1200px;
       width: 768px;
     }
 /* ------------footer------------- */
