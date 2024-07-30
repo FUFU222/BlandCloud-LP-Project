@@ -1,0 +1,2375 @@
+.sp {
+  display: none;
+}
+
+.tab {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+@font-face {
+  font-family: "Volkhov";
+  src: url("./assets/font/Volkhov/Volkhov-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Volkhov";
+  src: url("./assets/font/Volkhov/Volkhov-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Kaku Gothic Antique";
+  src: url("./assets/font/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Light.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Kaku Gothic Antique";
+  src: url("./assets/font/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Regular.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Kaku Gothic Antique";
+  src: url("./assets/font/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Medium.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Kaku Gothic Antique";
+  src: url("./assets/font/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Kurenaido";
+  src: url("./assets/font/Zen_Kurenaido/ZenKurenaido-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Antique Soft";
+  src: url("./assets/font/ZenAntiqueSoft-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zen Antique Soft";
+  src: url("./assets/font/ZenAntiqueSoft-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("./assets/font/NotoSansJP-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -----------arrow animation-------------- */
+.rotate {
+  transform: rotate(180deg);
+}
+/* -------------button-animation------------ */
+.CTA-button {
+  overflow: hidden;
+}
+.CTA-button::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fbfbfb;
+  animation: btn_animation 3s ease-in-out infinite;
+}
+@-webkit-keyframes btn_animation {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/*--------------- top ----------------- */
+.top {
+  width: 1366px;
+  height: 768px;
+  background-color: #fafafa;
+  padding: 34px 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/sec1/fv_background_pc.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.top__container {
+  width: 1280px;
+  height: 700px;
+  flex-shrink: 0;
+  position: relative;
+}
+.top__container__logo {
+  position: absolute;
+  top: 74px;
+  left: 62px;
+}
+.top__container__text h3 {
+  position: absolute;
+  top: 232px;
+  left: 64px;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 3.92px;
+}
+.top__container__title {
+  position: absolute;
+  top: 328px;
+  left: 60px;
+}
+
+.top__container__title h1 {
+  color: #304266;
+  text-shadow: 0px 4px 14px rgba(255, 255, 255, 0.6);
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: -2.4px;
+}
+.top__container__title h1 span {
+  letter-spacing: 2.4px;
+}
+.top__container__cta-button a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.top__container__cta-button {
+  position: absolute;
+  top: 520px;
+  left: 60px;
+  display: inline-flex;
+  padding: 20px 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(270deg, #d91e68 16.42%, #f2635f 126.01%);
+}
+
+.top__container__cta-button__upper h2 {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 5.6px;
+}
+.top__container__cta-button__lower h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 7.6px;
+}
+
+.top__container__actor {
+  position: absolute;
+  top: 165px;
+  left: 670px;
+}
+/* -------------company-overview---------- */
+.company-overview {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.company-overview__container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 80px 133px 130px 133px;
+}
+.company-overview__container__title {
+  color: #304266;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.company-overview__container__title h2 {
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+.company-overview__container__stats {
+  width: 100%;
+  height: auto;
+  gap: 40px;
+}
+.company-overview__container__stats__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+.company-overview__container__stats__cards__card {
+  list-style: none;
+  display: flex;
+  width: 300px;
+  height: 240px;
+  padding: 27px 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #eaedf2;
+}
+.company-overview__container__stats__cards__card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.company-overview__container__stats__cards__card__text__title {
+  align-items: center;
+}
+.company-overview__container__stats__cards__card__text__title h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.company-overview__container__stats__cards__card__text__title span {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+}
+.company-overview__container__stats__cards__card__text__lower {
+  color: #304266;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.company-overview__container__stats__cards__card__text__lower__num {
+  color: #5079b5;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+.company-overview__container__stats__cards__card__text__lower__num h4 {
+  font-family: "Volkhov";
+  font-weight: normal;
+}
+.company-overview__container__stats__cards__card__text__lower__unit h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+}
+
+.company-overview__container__stats__cards__card-connector {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.company-overview__container__stats__cards__card:nth-of-type(2) {
+  padding: 27px 16px;
+}
+.company-overview__container__stats__cards__card:nth-of-type(2)
+  .company-overview__container__stats__cards__card__text__title
+  span {
+  letter-spacing: 0px;
+}
+.company-overview__container__stats__cards__card:nth-of-type(2)
+  .company-overview__container__stats__cards__card__text__lower__unit {
+  color: #5079b5;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.company-overview__container__stats__cards__card:nth-of-type(3)
+  .company-overview__container__stats__cards__card__text {
+  gap: 32px;
+}
+
+.company-overview__container__stats__cards__card__lower__num span {
+  color: #5079b5;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.company-overview__container__stats__disclaimer {
+  background-color: #ffffff;
+  margin: 40px 0 120px 0;
+}
+
+/* ------------issue---------- */
+.issue {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  background-color: #fff;
+  padding-bottom: 150px;
+}
+.issue__container {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  z-index: 2;
+}
+.issue__container__title h2 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.issue__container__cards {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 40px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.issue__container__cards__card {
+  width: 530px;
+  height: 600px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eaedf2;
+}
+.issue__container__cards__card__title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 40px 40px 32px 40px;
+}
+.issue__container__cards__card__title__num h3 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #304266;
+  color: transparent;
+  font-family: "Volkhov";
+  font-size: 90px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 82px;
+  margin-right: 20px;
+}
+.issue__container__cards__card__title__text h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.issue__container__cards__card:nth-of-type(3)
+  .issue__container__cards__card__title__text
+  h3 {
+  letter-spacing: -1.12px;
+}
+.issue__container__cards__card__title__text h3 span:nth-of-type(1) {
+  letter-spacing: 0px;
+}
+.issue__container__cards__card__title__text h3 span {
+  letter-spacing: 2.6px;
+}
+.issue__container__cards__card__image img {
+  width: 450px;
+  height: 406px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+.issue__impact {
+  z-index: 2;
+}
+.issue__impact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  align-self: stretch;
+}
+.issue__impact__container__title h2 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px;
+}
+.issue__impact__container__title h2 span {
+  color: #d91e68;
+  font-weight: 900;
+}
+
+.issue__impact__container__items {
+  max-width: 1366px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px 56px;
+  flex-wrap: wrap;
+}
+.issue__impact__container__items__item {
+  display: flex;
+  width: 510px;
+  height: 80px;
+  padding: 20px 48px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px;
+  background: #304266;
+}
+.issue__impact__container__items__item__text p {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.issue__bg {
+  position: absolute;
+  bottom: 11px;
+  margin: 0 auto;
+  display: flex;
+  width: 130px;
+  height: 304px;
+  padding: 46px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 0;
+}
+/* ----------problemSolving-------- */
+.problemSolving {
+  width: 1366px;
+  height: 1247px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  z-index: -1;
+}
+.problemSolving__bg-upper {
+  height: 668px;
+  width: 1932px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background: #eaedf2;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+  clip-path: inset(0 283px 0 283px);
+  flex-shrink: 0;
+}
+.problemSolving__bg-lower {
+  width: 1366px;
+  height: 907px;
+  position: absolute;
+  top: 340px;
+  flex-shrink: 0;
+  background: #eaedf2;
+  z-index: 0;
+}
+
+.problemSolving__container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  top: 100px;
+}
+.problemSolving__container__title {
+  text-align: center;
+  align-self: stretch;
+}
+.problemSolving__container__title h2 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+.problemSolving__container__title h2 span {
+  color: #f2635f;
+  font-weight: 900;
+}
+.problemSolving__container__cards {
+  display: flex;
+  width: 1068px;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.problemSolving__container__cards__card {
+  width: 340px;
+  height: 408px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border: 1.5px solid #304266;
+  border-radius: 15px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.problemSolving__container__cards__card__title {
+  width: 280px;
+  height: 48px;
+  padding: 9px 20px;
+  border-radius: 4px;
+  background: #304266;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.problemSolving__container__cards__card__title h3 {
+  color: #fffcfc;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.problemSolving__container__cards__card__text {
+  text-align: center;
+}
+.problemSolving__container__cards__card__text p {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.problemSolving__container__cards__card__text p span {
+  letter-spacing: -3.2px;
+}
+.problemSolving__container__cards__card__image {
+  display: flex;
+  width: 280px;
+  height: 240px;
+  background-color: #5079b2;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------------serviceIntroduction-------------- */
+.serviceIntroduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+}
+.serviceIntroduction__head-line {
+  width: 100%;
+  height: 300px;
+  background: #304266;
+  position: relative;
+  background-image: url(./images/sec6/sec6_background-1_pc.jpg);
+}
+.serviceIntroduction__head-line__text-box {
+  position: absolute;
+  top: 45px;
+  left: 149px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  z-index: 2;
+}
+.serviceIntroduction__head-line__text-box__title h2 {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+.serviceIntroduction__head-line__text-box__title h2 span {
+  color: #f2635f;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.serviceIntroduction__head-line__text-box__description p {
+  color: #fff;
+  display: flex;
+  text-align: start;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px;
+}
+.serviceIntroduction__head-line__image {
+  position: absolute;
+  right: 11px;
+  bottom: 0px;
+  z-index: 1;
+}
+.serviceIntroduction__head-line__bg {
+  position: absolute;
+  top: 28px;
+  right: -114px;
+  z-index: 0;
+}
+.serviceIntroduction__head-line__bg svg {
+  fill: rgba(215, 235, 247, 0.1);
+}
+
+.serviceIntroduction__items {
+  display: flex;
+  width: 1100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 120px 0 163px 0;
+}
+.serviceIntroduction__items__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  align-self: stretch;
+}
+.serviceIntroduction__items__item__title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+.serviceIntroduction__items__item__title svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.serviceIntroduction__items__item__title h3 {
+  display: block;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 0px 48px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.serviceIntroduction__items__item__description p {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.serviceIntroduction__items__item__box {
+  display: flex;
+  width: 1032px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 24px;
+}
+.serviceIntroduction__items__item__box__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.serviceIntroduction__items__item__box__arrow {
+  z-index: 2;
+  position: absolute;
+  top: 249px;
+}
+
+.serviceIntroduction__items__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+}
+.serviceIntroduction__items__summary__container {
+  display: flex;
+  width: 1100px;
+  padding: 0 21px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.serviceIntroduction__items__summary__container__title h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 48px;
+}
+.serviceIntroduction__items__summary__container__descriptions {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.serviceIntroduction__items__summary__container__descriptions p {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+.serviceIntroduction__items__summary__container__descriptions p span {
+  font-weight: 900;
+  background: linear-gradient(transparent 60%, rgb(197, 225, 235) 60%);
+}
+
+/* ------firstCTABanner----- */
+.firstCTABanner {
+  width: 1366px;
+  height: 420px;
+  position: relative;
+  background-color: #eaedf2;
+}
+.firstCTABanner__image {
+  position: absolute;
+  bottom: 0px;
+}
+.firstCTABanner__title {
+  position: absolute;
+  top: 68px;
+  right: 74px;
+}
+.firstCTABanner__title h2 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 4.8px;
+}
+.firstCTABanner__title h2 span {
+  color: #5079b2;
+}
+.firstCTABanner__CTA-button {
+  position: absolute;
+  bottom: 36px;
+  left: 435px;
+  display: inline-flex;
+  padding: 20px 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background: linear-gradient(270deg, #d91e68 16.42%, #f2635f 126.01%);
+}
+.firstCTABanner__CTA-button a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.firstCTABanner__CTA-button__caption p {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 2.8px;
+}
+.firstCTABanner__CTA-button__action-word h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 8px;
+}
+.firstCTABanner__bubble {
+  position: absolute;
+  top: 227px;
+  left: 938px;
+}
+/* -------serviceDetail------ */
+.serviceDetail {
+  height: 100%;
+  padding: 135px 0 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.serviceDetail__effect {
+  position: relative;
+  display: flex;
+  width: 1100px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.serviceDetail__effect__title {
+  text-align: center;
+  align-items: center;
+}
+.serviceDetail__effect__title h2 {
+  align-self: stretch;
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+.serviceDetail__effect__title h2 span {
+  color: #d91e68;
+  text-align: center;
+  font-family: "Volkhov";
+  font-weight: normal;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.serviceDetail__effect__description p {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.serviceDetail__effect__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.serviceDetail__effect__cards__card {
+  height: 100%;
+  display: flex;
+  padding: 32px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: #eaedf2;
+}
+.serviceDetail__effect__cards__card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.serviceDetail__effect__cards__card__container__wrapper {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.serviceDetail__effect__cards__card__container__title h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+.serviceDetail__effect__cards__card__container__japaneseTitle h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.serviceDetail__effect__cards__card__container__image {
+  width: 300px;
+  height: 180px;
+  border-radius: 8px;
+}
+.serviceDetail__effect__cards__card__container__subtitle h4 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.serviceDetail__effect__cards__card__container__subtitle h4 span {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+}
+.serviceDetail__effect__cards__card__container__description p {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  height: 150px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.9px;
+}
+.serviceDetail__effect__cards__card:nth-of-type(1)
+  .serviceDetail__effect__cards__card__container__description
+  p {
+  letter-spacing: 0.72px;
+}
+
+.serviceDetail__reasons {
+  margin-top: 100px;
+  height: auto;
+  width: 1100px;
+  gap: 46px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.serviceDetail__reasons__title h3 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.serviceDetail__reasons__title h3 span {
+  color: #d91e68;
+  text-align: center;
+  font-family: "Volkhov";
+  font-weight: normal;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 82px;
+}
+.serviceDetail__reasons__cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.serviceDetail__reasons__cards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 350px;
+  height: 340px;
+  flex-shrink: 0;
+  border: 1.5px solid #304266;
+  clip-path: polygon(
+    10px 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 10px),
+    0% 10px
+  );
+}
+.serviceDetail__reasons__cards__card__title h4 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.serviceDetail__reasons__cards__card__title h4 span {
+  letter-spacing: 0;
+}
+
+.serviceDetail__example {
+  margin-top: 130px;
+  display: flex;
+  width: 1100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.serviceDetail__example__title {
+  align-self: stretch;
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.serviceDetail__example__case {
+  display: flex;
+  padding: 64px 50px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #f7f8fa;
+}
+.serviceDetail__example__case__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.serviceDetail__example__case__title__counter h3 {
+  color: #5079b2;
+  font-family: "Volkhov";
+  font-weight: normal;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 82px;
+}
+.serviceDetail__example__case__title__text h3 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: 1.4px;
+}
+.serviceDetail__example__case__overview {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.serviceDetail__example__case__overview__text p {
+  width: 636px;
+  height: 224px;
+  flex-shrink: 0;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+}
+.serviceDetail__example__case__overview__image {
+  flex-shrink: 0;
+}
+.serviceDetail__example__case__result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+  align-self: stretch;
+}
+.serviceDetail__example__case__result__growth {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.serviceDetail__example__case__result__growth__text {
+  color: #d91e68;
+  text-align: right;
+  -webkit-text-stroke-width: 0.5;
+  -webkit-text-stroke-color: #d91e68;
+  font-family: "Zen Kurenaido";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+.serviceDetail__example__case__result__growth svg:nth-of-type(2) {
+  position: absolute;
+  top: 32px;
+  right: -63.96px;
+}
+.serviceDetail__example__case__result__review {
+  display: flex;
+  justify-content: space-between;
+  gap: 115px;
+}
+.serviceDetail__example__case__result__review__image img {
+  width: 200px;
+}
+.serviceDetail__example__case__result__review__user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.serviceDetail__example__case__result__review__user__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.serviceDetail__example__case__result__review__user__name p {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.serviceDetail__example__case__result__review__user__type {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.serviceDetail__example__case__result__review__user__type__tag {
+  display: flex;
+  padding: 4px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #5079b2;
+}
+.serviceDetail__example__case__result__review__user__type__tag:nth-of-type(2) {
+  background: #304266;
+}
+.serviceDetail__example__case__result__review__user__type__tag p {
+  color: #fff;
+
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.serviceDetail__example__case__result__review__user__comment {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+/*--- case02--- */
+.serviceDetail__example__case__overview__paragraph p,
+.serviceDetail__example__case__overview__half-paragraph p {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.serviceDetail__example__case__overview__half-paragraph {
+  width: 621px;
+}
+.serviceDetail__example__case:nth-of-type(3)
+  .serviceDetail__example__case__overview {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.serviceDetail__example__case__overview__logo {
+  flex-shrink: 0;
+  position: absolute;
+  top: 136px;
+  right: 0px;
+}
+.serviceDetail__example__case__overview__logo img {
+  width: 336.364px;
+  height: 74px;
+}
+.serviceDetail__example__case__overview:nth-of-type(2) {
+  position: relative;
+}
+
+/* ---------flow---------- */
+.flow {
+  width: auto;
+  height: 1748px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  z-index: -1;
+}
+.flow__bg-upper {
+  height: 668px;
+  width: 1932px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background: #eaedf2;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+  clip-path: inset(0 283px 0 283px);
+  flex-shrink: 0;
+}
+.flow__bg-lower {
+  width: 1366px;
+  height: 1408px;
+  position: absolute;
+  top: 340px;
+  flex-shrink: 0;
+  background: #eaedf2;
+  z-index: 0;
+}
+.flow__container {
+  position: absolute;
+  top: 102px;
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1;
+}
+.flow__container__title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.flow__container__title-box__title h2 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+.flow__container__title-box__title h2 span {
+  color: #d91e68;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.flow__container__title-box__description p {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+}
+.flow__container__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+.flow__container__steps__step {
+  width: 1000px;
+  height: 240px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  position: relative;
+}
+.flow__container__steps__step__step-count {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  color: #5079b2;
+  font-family: "Volkhov";
+  font-size: 56px;
+  font-weight: normal;
+  font-style: normal;
+  z-index: 2;
+  font-weight: 400;
+  line-height: 82px;
+}
+.flow__container__steps__step__title {
+  position: absolute;
+  top: 40px;
+  left: 291px;
+  width: 650px;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+  text-align: start;
+}
+.flow__container__steps__step__image {
+  position: absolute;
+  top: 86px;
+  left: 67px;
+  flex-shrink: 0;
+}
+.flow__container__steps__step__image img {
+  width: 200px;
+  height: 120px;
+}
+.flow__container__steps__step__description {
+  position: absolute;
+  top: 104px;
+  left: 291px;
+  width: 650px;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: start;
+}
+
+/* ----------plan---------- */
+
+.plan {
+  padding: 120px 0 245px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.plan__container {
+  display: flex;
+  width: 1366px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.plan__container__title h2 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.plan__container__description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  align-self: stretch;
+}
+.plan__container__description__upper h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 56px;
+}
+.plan__container__description__upper span {
+  color: #d91e68;
+  font-size: 48px;
+}
+.plan__container__description__upper span + h3 {
+  font-size: 28px;
+}
+.plan__container__description__lower h3 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px;
+}
+.plan__container__description__lower h3 span {
+  font-size: 32px;
+}
+.plan__container__cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+}
+.plan__container__cards__card {
+  display: flex;
+  flex-direction: column;
+}
+.plan__container__cards__card__top-edge {
+  width: 350px;
+  height: 16px;
+  flex-shrink: 0;
+  background: #8cafe0;
+}
+.plan__container__cards__card__box {
+  width: 350px;
+  height: 600px;
+  flex-shrink: 0;
+  padding: 32px 24px 82px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  fill: #eaedf2;
+}
+.plan__container__cards__card__box svg {
+  position: absolute;
+  top: 0px;
+}
+.plan__container__cards__card__box__text-area {
+  display: flex;
+  width: 302px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  z-index: 1;
+}
+.plan__container__cards__card__box__text-area__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.plan__container__cards__card__box__text-area__title_plan-name h4 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}
+.plan__container__cards__card__box__text-area__title__price p {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1.4px;
+}
+.plan__container__cards__card__box__text-area__title__price p span {
+  color: #d91e68;
+  text-align: center;
+  font-family: "Zen Antique Soft";
+  font-size: 80px;
+  line-height: 32px;
+  font-weight: 400;
+  padding: 0 10px;
+  letter-spacing: 4px;
+}
+.plan__container__cards__card__box__text-area__overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.plan__container__cards__card__box__text-area__overview__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+.plan__container__cards__card__box__text-area__overview__content__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.plan__container__cards__card__box__text-area__overview__content__item__check-box
+  svg {
+  position: static;
+}
+.plan__container__cards__card__box__text-area__overview__content__item__text {
+  width: 270px;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+
+.plan__container__cards__card__box__text-area__overview__recommend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+.plan__container__cards__card__box__text-area__overview__recommend__title {
+  display: flex;
+  width: 300px;
+  padding: 4px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #8cafe0;
+}
+
+.plan__container__cards__card__box__text-area__overview__recommend__title__text
+  h4 {
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0.9px;
+}
+
+.plan__container__cards__card__box__text-area__overview__recommend__target {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+}
+/* --プランカード色変更-- */
+.plan__container__cards__card:nth-of-type(2)
+  .plan__container__cards__card__top-edge,
+.plan__container__cards__card:nth-of-type(2)
+  .plan__container__cards__card__box__text-area__overview__recommend__title {
+  background: #5079b2;
+}
+.plan__container__cards__card:nth-of-type(3)
+  .plan__container__cards__card__top-edge,
+.plan__container__cards__card:nth-of-type(3)
+  .plan__container__cards__card__box__text-area__overview__recommend__title {
+  background: #304266;
+}
+.plan__container__annotation {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  width: 90%;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+/* ----------------secondCTABanner------------------ */
+.secondCTABanner {
+  width: 1366px;
+  height: 280px;
+  position: relative;
+  background-color: #eaedf2;
+}
+.secondCTABanner__image img {
+  width: 459px;
+  height: 485px;
+  position: absolute;
+  bottom: 0px;
+  left: 81px;
+}
+.secondCTABanner__bubble {
+  position: absolute;
+  bottom: 205px;
+  left: 514.04px;
+}
+.secondCTABanner__speech {
+  position: absolute;
+  top: -90.94px;
+  left: 559px;
+  display: flex;
+  width: 170px;
+  height: 93px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.secondCTABanner__speech h4 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 42px;
+}
+.secondCTABanner__CTA-button {
+  position: absolute;
+  bottom: 50px;
+  left: 639px;
+  display: inline-flex;
+  padding: 24px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background: linear-gradient(270deg, #d91e68 16.42%, #f2635f 126.01%);
+}
+.secondCTABanner__CTA-button a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.secondCTABanner__CTA-button__caption p {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 5.6px;
+}
+.secondCTABanner__CTA-button__action-word h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 7.6px;
+}
+
+/* ----------------faq------------------ */
+.faq {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 64px 0;
+}
+.faq__list {
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.faq__list__title h2 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.faq__list__item {
+  position: relative;
+  display: flex;
+  padding: 24px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #eaedf2;
+}
+.faq__list__item__question {
+  display: flex;
+  width: 920px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.faq__list__item__question.open {
+  margin-bottom: 40px;
+}
+
+.faq__list__item__question__box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.faq__list__item__question__box__text h4 {
+  display: flex;
+  width: 734px;
+  flex-direction: column;
+  justify-content: center;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.faq__list__item__answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height margin-botom 0.3s ease;
+}
+.faq__list__item__answer.open {
+  max-height: 400px;
+}
+.faq__list__item__answer__symbol {
+  width: 24px;
+  height: 32px;
+}
+.faq__list__item__answer__text h4 {
+  color: #304266;
+
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+/* --------freeService--------- */
+.free-service {
+  padding-bottom: 80.06px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+.free-service__container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.free-service__container__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 49px;
+  align-self: stretch;
+}
+.free-service__container__head__text-area {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+  gap: 40px;
+}
+.free-service__container__head__text-area__title h2 {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+.free-service__container__head__text-area__title__highlight {
+  background: linear-gradient(transparent 60%, rgb(252, 204, 233) 60%);
+}
+.free-service__container__head__image img {
+  height: 377px;
+  width: 251px;
+}
+.free-service__container__head__text-area__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.free-service__container__head__text-area__description p {
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+.free-service__container__annotation h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+.free-service__container__annotation h3 span:nth-of-type(1) {
+  color: #d91e68;
+  text-align: center;
+  font-family: "Volkhov";
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 82px;
+  padding: 5px;
+}
+.free-service__container__annotation h3 span {
+  color: #d91e68;
+  font-weight: 900;
+}
+
+.free-service__container__cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.free-service__container__cards__card {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.free-service__container__cards__card__title {
+  display: flex;
+  padding: 12px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #5079b2;
+}
+.free-service__container__cards__card__title h4 {
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.free-service__container__cards__card__image img {
+  width: 480px;
+  height: 274px;
+}
+.free-service__container__CTA {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.free-service__container__CTA__upper-text h3 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+.free-service__container__CTA__upper-text h3 span {
+  color: #d91e68;
+  font-family: "Zen Antique Soft";
+  font-size: 40px;
+  font-weight: 400;
+  padding: 0 8px;
+  letter-spacing: 2px;
+}
+.free-service__container__CTA__button {
+  display: flex;
+  padding: 24px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  border-radius: 8px;
+  background: linear-gradient(269deg, #d91e68 -5.38%, #f2635f 99.09%);
+}
+
+/* --------------contact--------------- */
+.contact {
+  width: 1366px;
+  height: 2250px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.contact__bg-upper {
+  height: 668px;
+  width: 1932px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background: #eaedf2;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+  clip-path: inset(0 283px 0 283px);
+  flex-shrink: 0;
+}
+
+.contact__bg-lower {
+  width: 1366px;
+  height: 1700px;
+  position: absolute;
+  bottom: 0px;
+  flex-shrink: 0;
+  background: #eaedf2;
+  z-index: 0;
+}
+
+.contact__container {
+  position: absolute;
+  top: 102px;
+  display: flex;
+  width: 1000px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  z-index: 2;
+}
+
+.contact__container__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__container__title h2 {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 40px;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.contact__container__title__texts p {
+  color: #304266;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.contact__container__title__texts p span {
+  color: #304266;
+  padding-top: 8px;
+  font-weight: 900;
+  background: linear-gradient(transparent 60%, rgb(252, 204, 233) 60%);
+}
+
+.contact__container__form {
+  width: 100%;
+  margin: 64px 0 103px 0px;
+  display: flex;
+  justify-content: center;
+}
+/* -------------contact-form--------------- */
+form {
+  line-height: 1.5; /* 行間の設定 */
+  margin: 0; /* デフォルトのマージンをリセット */
+}
+.column {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin-bottom: 40px;
+}
+.upper {
+  display: flex;
+  flex-direction: row;
+}
+.essential,
+.any,
+.space {
+  display: flex;
+  /* width: 64px;
+  height: 35px; */
+  padding: 6px 16px;
+  margin-right: 19px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.essential {
+  background: #d91e68;
+}
+
+.any {
+  background: #ccc;
+}
+
+.inner-text {
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.column label,
+.column .select,
+.column .textarea {
+  width: 312px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #304266;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.column input,
+.column select {
+  width: 480px;
+  height: 35px;
+  stroke-width: 1px;
+  stroke: #304266;
+}
+
+.column textarea {
+  width: 480px;
+  height: 300px;
+  stroke-width: 1px;
+  stroke: #304266;
+}
+
+.submit-button {
+  display: flex;
+  width: 915px;
+  padding: 16px 160px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+.submit-button[value="送信する"] {
+  color: #fff;
+  font-size: 32px;
+  background-color: #8095b2;
+  cursor: pointer;
+}
+/* -----------footer----------- */
+.footer {
+  display: flex;
+  width: 1366px;
+  height: 320px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #304266;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.footer__container__logo img {
+  width: 430px;
+  height: 90.765px;
+}
+.footer__container__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  align-self: stretch;
+}
+.footer__container__content__policy {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  align-self: stretch;
+  text-align: center;
+}
+.footer__container__content__policy a {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-size: 15.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+.footer__container__content__policy__separate {
+  width: 1px;
+  height: 16px;
+  background: #fff;
+}
+.footer__container__copyright p {
+  color: #fff;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+/* ---------policy--------- */
+.policy {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  color: #304266;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.policy th {
+  width: 180px;
+  text-align: left;
+}
+.policy h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 60px 0;
+}
+.policy h2 {
+  font-size: 24px;
+  margin-top: 70px;
+  margin: 40px 0;
+}
+.policy p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.policy__back-to-top {
+  text-align: center;
+  margin-top: 70px;
+}
+.policy__back-to-top a {
+  color: #304266;
+  text-decoration: none;
+  font-weight: bold;
+}
+.policy__back-to-top a:hover {
+  text-decoration: underline;
+}
+td a {
+  color: #304266;
+}
+/*-------------------thanks--------------------  */
+.thanks {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  color: #304266;
+  background-color: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.thanks h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 60px 0;
+}
+.thanks h2 {
+  font-size: 24px;
+  margin: 40px 0;
+}
+.thanks p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.thanks__back-to-top {
+  text-align: center;
+  margin-top: 30px;
+}
+.thanks__back-to-top a {
+  color: #304266;
+  text-decoration: none;
+  font-weight: bold;
+}
+.thanks__back-to-top a:hover {
+  text-decoration: underline;
+}
