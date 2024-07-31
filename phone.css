@@ -596,7 +596,7 @@
 
   /* ---------------flow--------------- */
   .flow {
-    height: 2120px;
+    height: 2160px;
   }
 
   .flow__bg-upper {
@@ -604,7 +604,7 @@
     clip-path: inset(0 778px 0 778px);
   }
   .flow__bg-lower {
-    height: 1784px;
+    height: 1824px;
     width: 377px;
   }
 
