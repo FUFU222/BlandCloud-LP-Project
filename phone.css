@@ -655,6 +655,8 @@
 
   .flow__container__steps__step__title {
     position: static;
+  }
+  .flow__container__steps__step__title h3 {
     font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 24px;
